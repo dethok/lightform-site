@@ -1,0 +1,12 @@
+research/instagram/*.png
+research/lightpro/contact-sheet.png
+research/lightpro/pages.json
+research/**/*.py
+research/**/info*.json
+research/**/reqs.json
+research/screens/
+__pycache__/
+.DS_Store
+showcase/
+docs/
+dist/

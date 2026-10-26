@@ -1,0 +1,906 @@
+{
+ "02-about": {
+  "path": "/pages/about",
+  "title": "Our Story | SOJAO Singapore",
+  "url": "https://sojao.shop/pages/about",
+  "height": 5169,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "69__3fbb2eb9-9414-4ad6-b493-9c9471396f65",
+    "y": 116,
+    "h": 669,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 0,
+    "text": ""
+   },
+   {
+    "id": "69__c0383a89-af2f-4425-9737-4cd72eb14ce9",
+    "y": 784,
+    "h": 1001,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 0,
+    "text": "Our Story Back in 2018, we simply couldn't find what we wanted - super soft, great-looking sheets that were ethically made yet affordably priced for their quali"
+   },
+   {
+    "id": "69__6e94d6c3-76ff-4e43-b769-796980f7c2f7",
+    "y": 1785,
+    "h": 669,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 0,
+    "text": "Means \u2018go to sleep\u2019 in Hindi, and was chosen as a tribute to the Indian cotton farmers behind our best-selling organic bed sheets."
+   },
+   {
+    "id": "69__a852eaa4-6359-4f5a-ab5b-c160c585fd78",
+    "y": 2454,
+    "h": 810,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 1,
+    "vids": 1,
+    "links": 0,
+    "text": "From seed to sheets - the magic behind our 100% organic cotton bed sheets"
+   },
+   {
+    "id": "69__6f70b27d-2d02-49c2-86fa-895f67b7fac6",
+    "y": 3264,
+    "h": 551,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     ""
+    ],
+    "imgs": 4,
+    "vids": 0,
+    "links": 0,
+    "text": "Free from nasties We're anti anti-wrinkle. Forget those harmful toxic fabric finishes, our bed sheets are safe and hypoallergenic. Longer for better We only use"
+   },
+   {
+    "id": "69__6fe5f6a4-e0eb-41f5-8e73-9ccfc951b751",
+    "y": 3815,
+    "h": 774,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     ""
+    ],
+    "imgs": 6,
+    "vids": 0,
+    "links": 12,
+    "text": "READY TO GO ORGANIC? Classic Moss Duvet Bundle Set Sale price From $259.26 Classic Cloud Duvet Bundle Set Sale price From $259.26 BACK IN STOCK Crisp Olive Duve"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 4589,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "03-collection": {
+  "path": "/collections/classic-bed-sheets",
+  "title": "Classic Sateen Bed Sheets | Sustainable Bed Sheets |SOJAO Singapore",
+  "url": "https://sojao.shop/collections/classic-bed-sheets",
+  "height": 11931,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "16804057841917__banner",
+    "y": 116,
+    "h": 215,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "30px",
+    "pb": "30px",
+    "heads": [
+     ""
+    ],
+    "imgs": 0,
+    "vids": 0,
+    "links": 9,
+    "text": "Our Classic Sateen sheets are the buttery-smooth and super soft organic cotton bedding that everyone knows and loves. Choose from our Duvet Bundle Sets, Quilt B"
+   },
+   {
+    "id": "17__24b197d3-77cd-4097-adb2-f6354d3d2b32",
+    "y": 331,
+    "h": 298,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 13,
+    "vids": 0,
+    "links": 13,
+    "text": "Duvet Bundle Sets Quilt Bundle Sets Fitted Sheet Sets Duvet Sets Quilt Sets Flat Sheet Sets Duvet Covers Fitted Sheets Pillow Cases Bolster Cases Body Pillow Ca"
+   },
+   {
+    "id": "16804057841917__main",
+    "y": 629,
+    "h": 7734,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 118,
+    "vids": 0,
+    "links": 177,
+    "text": "Filters Sort by: Featured Product type Duvet Cover Duvet Bundle Set Quilt Duvet Set Fitted Sheet Quilt Bundle Set Flat Sheet Quilt Set Pillow Cases Fitted Sheet"
+   },
+   {
+    "id": "57841917__image_with_text_overlay_3mtwRb",
+    "y": 8363,
+    "h": 719,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 0,
+    "text": "The Classic Sateen collection features a range of bedding items such as fitted sheets, duvet covers, pillowcases, and more. Made using a sateen weave, it create"
+   },
+   {
+    "id": "4057841917__jsc_section_testimony_aLQ4aE",
+    "y": 9082,
+    "h": 586,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     "Temperature",
+     "Durability",
+     "What does Classic Sateen feel like?"
+    ],
+    "imgs": 3,
+    "vids": 0,
+    "links": 0,
+    "text": "Temperature Classic Sateen beddings use a \u2018four/three-over-one-under\u2019 weave pattern. The dense structure of a sateen weave tends to trap more heat, making them "
+   },
+   {
+    "id": "17__c72207cd-2e70-4953-90ff-ab0bdce68456",
+    "y": 9668,
+    "h": 909,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 2,
+    "text": "What is organic cotton? What's the difference between the Classic Sateen and Crisp Percale Collection? How to wash bed sheets? Do SOJAO bed sheets come pre-wash"
+   },
+   {
+    "id": "17__a0097120-83ec-4253-9c1f-2334253af3c7",
+    "y": 10577,
+    "h": 774,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     ""
+    ],
+    "imgs": 6,
+    "vids": 0,
+    "links": 12,
+    "text": "READY TO GO ORGANIC? Classic Moss Duvet Bundle Set Sale price From $259.26 Classic Cloud Duvet Bundle Set Sale price From $259.26 BACK IN STOCK Crisp Olive Duve"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 11351,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "04-product": {
+  "path": "/products/classic-natural-duvet-bundle-set",
+  "title": "Classic Natural Bundle Set | Organic Cotton Bed Sheets | SOJAO Singapore",
+  "url": "https://sojao.shop/products/classic-natural-duvet-bundle-set",
+  "height": 9198,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "16812545409277__main",
+    "y": 116,
+    "h": 1382,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     "Classic Natural Duvet Bundle Set"
+    ],
+    "imgs": 42,
+    "vids": 0,
+    "links": 46,
+    "text": "Classic Natural Duvet Bundle Set $259.26 279 Reviews This bundle contains: Classic Natural Duvet Cover - Single Classic Natural Fitted Sheet - Single Classic Na"
+   },
+   {
+    "id": "77__02f29f4e-79b9-42ab-a228-8c5f511c4cc0",
+    "y": 1497,
+    "h": 578,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     ""
+    ],
+    "imgs": 4,
+    "vids": 0,
+    "links": 0,
+    "text": "Labeled sides Envelope closure Corner ties Reusable dustbag"
+   },
+   {
+    "id": "09277__images_with_text_scrolling_bzXcAi",
+    "y": 2076,
+    "h": 2149,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 6,
+    "vids": 0,
+    "links": 0,
+    "text": "01 A Sateen weave that's buttery-soft, lightweight and breathable with a slight luxurious sheen 02 These 100% organic cotton sheets will only get better over ti"
+   },
+   {
+    "id": "77__eb7128e2-0e75-48a2-9251-125eae2ccf2d",
+    "y": 4225,
+    "h": 425,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 4,
+    "vids": 0,
+    "links": 0,
+    "text": "Sustainably Made From seed to sheets, we're 100% organic Easy Care Machine-washable and you can also tumble dry on a low heat Softer with Use Quality that lasts"
+   },
+   {
+    "id": "77__31b282eb-b8f8-400d-96f4-5fa1b2ce4dfe",
+    "y": 4650,
+    "h": 2522,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     "As heard from you",
+     "Customers say"
+    ],
+    "imgs": 0,
+    "vids": 0,
+    "links": 0,
+    "text": "As heard from you 4.9 Based on 279 reviews Write A Review Customers say AI-generated from customer reviews. The Classic Natural Duvet Bundle Set is highly prais"
+   },
+   {
+    "id": "77__2761e769-595c-4d68-a478-614d1d73a5d1",
+    "y": 7172,
+    "h": 602,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 3,
+    "text": "IN CASE YOU WERE WONDERING What's the difference between the Classic Sateen and Crisp Percale collection? Is there free delivery? Do SOJAO bed sheets come pre-w"
+   },
+   {
+    "id": "16812545409277__product-recommendations",
+    "y": 7774,
+    "h": 844,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     ""
+    ],
+    "imgs": 6,
+    "vids": 0,
+    "links": 10,
+    "text": "Classic Navy Duvet Bundle Set Sale price From $259.26 Cable Knit Throw Sale price $202.00 Ivory Maroon Mustard Classic Natural Duvet Set Sale price From $176.64"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 8618,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "05-journal": {
+  "path": "/blogs/house-to-home",
+  "title": "House to Home | SOJAO Singapore",
+  "url": "https://sojao.shop/blogs/house-to-home",
+  "height": 8324,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "13__8d63d89d-a96b-43cd-ae93-7ba0cacf9d24",
+    "y": 116,
+    "h": 324,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 0,
+    "text": "We Hustle Hard Just like you"
+   },
+   {
+    "id": "16761202934013__main",
+    "y": 440,
+    "h": 7305,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     "House to Home"
+    ],
+    "imgs": 50,
+    "vids": 0,
+    "links": 101,
+    "text": "House To Home How Tos She-Hustles Ultimate Bedding Guide Home, Love And A Supper Club For Sheryl and Collette, home is less a place than a person. After years o"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 7744,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "06-article": {
+  "path": "/blogs/house-to-home/ochrehome",
+  "title": "An Eclectic Art-Filled Home With Hygge | House to Home | SOJAO Singapore",
+  "url": "https://sojao.shop/blogs/house-to-home/ochrehome",
+  "height": 22590,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "16751938765053__main",
+    "y": 116,
+    "h": 21895,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [
+     "An Eclectic Art-Filled Home With Hygge",
+     "Reading next"
+    ],
+    "imgs": 28,
+    "vids": 0,
+    "links": 21,
+    "text": "An Eclectic Art-Filled Home With Hygge Nov 14, 2020 HOUSE TO HOME #02 Geraldine & Vincent @ochre.home Art teacher Geraldine and photography hobbyist Vincent hav"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 22010,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "07-stores": {
+  "path": "/pages/our-store",
+  "title": "Our Stores",
+  "url": "https://sojao.shop/pages/our-store",
+  "height": 2573,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "29__00cc4bae-bbfc-4545-99f6-b356f9c4f494",
+    "y": 116,
+    "h": 1636,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 4,
+    "vids": 0,
+    "links": 2,
+    "text": "VISIT US IN THE EAST Joo Chiat Road Visit our flagship Home Goods Store to get a feel of our bed sheets, loungewear and towels. Shop everything else to build yo"
+   },
+   {
+    "id": "16756703461629__rich_text_HkRWFJ",
+    "y": 1751,
+    "h": 242,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 1,
+    "text": "SOJAO Store Vendor (Expression of Interest) Interested to join us as a vendor? Click here to register your interest."
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 1993,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "08-rewards": {
+  "path": "/pages/rewards",
+  "title": "Sleep Easy Club | Rewards | SOJAO Singapore",
+  "url": "https://sojao.shop/pages/rewards",
+  "height": 4281,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "shopify-section-account-banner",
+    "y": 116,
+    "h": 64,
+    "bg": "rgba(10, 39, 61, 0.05)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 4,
+    "text": "Rewards Orders Addresses Login"
+   },
+   {
+    "id": "53__0706a20d-0cc3-48cc-b792-4398aa9f8d46",
+    "y": 179,
+    "h": 3522,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 9,
+    "vids": 0,
+    "links": 0,
+    "text": "Sleep Easy Club Let every purchase hustle hard for you. Sleep easy with rewards on each spend. We\u2019re thrilled to have you. JOIN NOW LOGIN Get Started Sign Up Cr"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 3701,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "09-bedding-landing": {
+  "path": "/pages/bedding",
+  "title": "Bedding | Sustainable Bed Sheets | SOJAO Singapore",
+  "url": "https://sojao.shop/pages/bedding",
+  "height": 4289,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "45__ac54f687-5557-46fa-b065-f24726777b71",
+    "y": 116,
+    "h": 187,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 0,
+    "text": "Shop All Bedding Quality organic cotton bedding that get softer with every wash and use. Our Classic Sateen and Crisp Percale bed sheets come in nine sizes - si"
+   },
+   {
+    "id": "45__0f687485-0c7c-4251-a837-df1c6f23bfed",
+    "y": 302,
+    "h": 507,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 1,
+    "text": "Classic Sateen Bestseller alert! Our Classic Sateen sheets are the buttery-smooth and super soft organic cotton bedding that everyone knows and loves. SHOP CLAS"
+   },
+   {
+    "id": "45__cedc1998-8db0-4476-9e46-326e3c70e6ed",
+    "y": 809,
+    "h": 557,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 1,
+    "text": "Crisp Percale Love a structured feel? Our Crisp Percale bedding is for you! Extra breathable and lightweight, they're perfect for hot sleepers or sweaty nights."
+   },
+   {
+    "id": "45__8edbd48a-be9a-4e05-adcc-0164bd79fa69",
+    "y": 1366,
+    "h": 422,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 1,
+    "text": "Want the best of both worlds? Mix & Match it your way. BUILD YOUR PERFECT BEDROOM"
+   },
+   {
+    "id": "45__e56e30bf-8906-4f54-bc81-c08eadc4f57d",
+    "y": 1788,
+    "h": 557,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 1,
+    "text": "Organic Cotton Quilts Our organic Summer Quilts are the best thing since sliced bread. Lightweight and cooling, they're great for cosying up without feeling war"
+   },
+   {
+    "id": "45__dce1e489-712b-437d-8903-1ff17b017d38",
+    "y": 2344,
+    "h": 909,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 2,
+    "text": "What is organic cotton? What's the difference between the Classic Sateen and Crisp Percale Collection? How do I wash & care for my SOJAO bed sheets? Do SOJAO be"
+   },
+   {
+    "id": "45__aef75c0b-e729-46aa-a092-908f38e2d9b6",
+    "y": 3253,
+    "h": 457,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 2,
+    "vids": 0,
+    "links": 1,
+    "text": "LOOKING TO FIND YOUR Perfect Match? TAKE OUR SHEETS QUIZ"
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 3710,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ },
+ "10-quiz": {
+  "path": "/pages/take-our-quiz",
+  "title": "Sheets Quiz | Take Our Quiz | SOJAO Singapore",
+  "url": "https://sojao.shop/pages/take-our-quiz",
+  "height": 1487,
+  "sections": [
+   {
+    "id": "shopify-section-announcement-bar",
+    "y": 0,
+    "h": 42,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 40,
+    "text": "NEW IN - Organic Heavyweight Tees Free express shipping to APAC countries on orders above SGD 450* Same Day In-Store Pick Up Available Free Delivery In Singapor"
+   },
+   {
+    "id": "shopify-section-header",
+    "y": 42,
+    "h": 74,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 22,
+    "vids": 0,
+    "links": 112,
+    "text": "Bedding Bath Life & Lounge Home & Living Last Call! Gift Cards Journal SOJAO Open search Open account page Open cart 0"
+   },
+   {
+    "id": "16782564229373__16787736343ec50501",
+    "y": 116,
+    "h": 792,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 0,
+    "vids": 0,
+    "links": 0,
+    "text": ""
+   },
+   {
+    "id": "shopify-section-footer",
+    "y": 908,
+    "h": 580,
+    "bg": "rgba(0, 0, 0, 0)",
+    "pt": "0px",
+    "pb": "0px",
+    "heads": [],
+    "imgs": 3,
+    "vids": 0,
+    "links": 26,
+    "text": "WE HUSTLE, YOU SLEEP EASY Get 5% off your first order. Collect points and exclusive perks with our rewards program. JOIN US SHOP Shop Bedding Shop Bath Shop Lou"
+   }
+  ]
+ }
+}

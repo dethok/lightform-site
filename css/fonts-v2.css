@@ -1,0 +1,13 @@
+/* V2 - Slingshot Bedrock p.1 typography, free stand-ins. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap");
+/* Licensed files drop in here (put them in assets/fonts/), nothing else changes:
+@font-face{font-family:"Megumi";src:url("../assets/fonts/Megumi-UltraLightItalic.woff2") format("woff2");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Forma DJR Deck";src:url("../assets/fonts/FormaDJRDeck-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Ballinger Mono";src:url("../assets/fonts/BallingerMono-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+*/
+:root{
+  --font-display:"Cormorant Garamond","Megumi",Georgia,serif;
+  --display-weight:300; --display-style:italic; --display-tracking:-0.01em; --display-lh:1.0; --display-scale:1.14;
+  --font-body:"Inter","Forma DJR Deck",system-ui,sans-serif; --body-tracking:-0.01em;
+  --font-mono:"DM Mono","Ballinger Mono",ui-monospace,monospace; --mono-tracking:0.025em; --mono-transform:none; --mono-weight:400;
+}

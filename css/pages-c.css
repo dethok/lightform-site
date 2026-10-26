@@ -1,0 +1,48 @@
+/* Stage C: brands.html + shop.html. Shared extras: typographic tile + .ph overlay on photos. */
+.page-head{padding:calc(var(--header-h) + 72px) 0 56px}
+.page-head h1{max-width:12em;margin-bottom:24px}
+.lede{font-size:18px;max-width:34em;color:var(--ink-2)}
+.ph-tag{position:absolute;top:16px;right:16px;z-index:2;pointer-events:none;background:var(--paper);color:#8A6A2C}
+.tile-typo{position:relative;aspect-ratio:4/5;display:flex;align-items:flex-end;padding:24px;background:var(--paper-2);transition:background var(--t-fast)}
+.band .tile-typo{background:var(--paper)}
+.tile:hover .tile-typo{background:var(--white)}
+.tile-typo-name{font-family:var(--font-display);font-weight:var(--display-weight);font-style:var(--display-style);font-size:calc(30px*var(--display-scale));letter-spacing:var(--display-tracking);line-height:var(--display-lh)}
+.tile-id{display:flex;flex-direction:column;gap:4px}
+.tile-id .mono{color:var(--ink-2)}
+
+/* brands: 50/50 alternating panel + photo */
+.brand-split{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.brand-panel{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;padding:72px clamp(24px,6vw,96px);background:var(--ink);color:var(--paper)}
+.brand-panel h2{max-width:8em}
+.brand-panel p{max-width:30em}
+.brand-origin,.brand-carried{opacity:.7}
+.brand-panel .btn-ghost{border-color:rgba(248,246,241,.7);color:var(--paper)}
+.brand-panel .btn-ghost:hover{background:var(--paper);color:var(--ink)}
+.brand-sec.alt .brand-panel{background:var(--paper-2);color:var(--ink)}
+.brand-sec.alt .brand-panel .btn-ghost{border-color:var(--ink);color:var(--ink)}
+.brand-sec.alt .brand-panel .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.brand-sec.alt .brand-panel{order:2}
+.brand-photo{min-height:360px}
+.brand-tiles{padding-block:72px var(--section)}
+@media (max-width:899px){.brand-split{grid-template-columns:minmax(0,1fr);min-height:0}.brand-sec.alt .brand-panel{order:0}.brand-photo{order:-1;aspect-ratio:4/3;min-height:0}.brand-panel{padding-block:56px}.brand-sec.alt .brand-photo{order:-1}}
+@media (max-width:559px){.brand-tiles .grid-tiles{grid-template-columns:repeat(2,1fr);gap:32px 16px}}
+
+/* shop */
+.dir{display:grid;grid-template-columns:3fr 1fr;gap:48px;align-items:start}
+.dir-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px var(--gap)}
+.dir-name{font-family:var(--font-display);font-weight:var(--display-weight);font-style:var(--display-style);font-size:var(--h3-size);letter-spacing:var(--display-tracking);line-height:1.15;display:inline-block;margin-bottom:14px;border-bottom:1px solid transparent;transition:border-color var(--t-fast)}
+.dir-name:hover{border-bottom-color:currentColor}
+.dir-brand li a{display:block;padding:4px 0;font-size:15px;color:var(--ink-2);transition:color var(--t-fast)}
+.dir-brand li a:hover{color:var(--ink)}
+.dir-hero{aspect-ratio:4/5}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--gap-y) var(--gap)}
+.grid-5 .tile-typo{padding:16px}
+.grid-5 .tile-typo-name{font-size:calc(22px*var(--display-scale))}
+@media (max-width:899px){.dir{grid-template-columns:1fr}.dir-cols{grid-template-columns:repeat(2,1fr)}.dir-hero{aspect-ratio:4/3}.grid-5{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:559px){.dir-cols{gap:32px 16px}.grid-5,#by-product .grid-tiles{gap:32px 16px}#by-product .grid-tiles{grid-template-columns:repeat(2,1fr)}.tile-typo-name{font-size:calc(22px*var(--display-scale))}.tile-row{flex-direction:column;gap:2px}}
+.tile-typo + .tile-row:has(.tile-price) .tile-name{display:none}
+.tile-typo + .tile-row:has(.tile-price){justify-content:flex-end}
+.tile-typo + .tile-row .tile-id .mono{display:block}
+
+/* typographic collection tiles already carry their name */
+.tile-typo + .tile-row:not(:has(.tile-price)){display:none}

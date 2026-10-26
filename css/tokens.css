@@ -1,0 +1,13 @@
+/* Design tokens shared by V1 and V2. Fonts live in fonts.css / fonts-v2.css. */
+:root{
+  --paper:#F8F6F1; --paper-2:#EFEAE0; --white:#FFFFFF; --ink:#171614; --ink-2:#5B574F;
+  --hairline:#DDD6C8; --footer:#1F1E1B; --accent:#C9A15C;
+  --glow:255,196,110; --dim:rgba(23,22,20,.4);
+
+  --container:1360px; --gutter:40px; --section:112px; --gap:24px; --gap-y:48px; --header-h:76px;
+  --radius:0; --radius-pill:999px;
+
+  --ease:cubic-bezier(.22,.61,.36,1); --ease-drawer:cubic-bezier(.41,.38,.14,1);
+  --t-fast:.3s; --t-lamp:.55s;
+}
+@media (max-width:600px){:root{--gutter:24px;--section:72px}}

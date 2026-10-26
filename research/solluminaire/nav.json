@@ -1,0 +1,348 @@
+{
+ "AEON\u00ae": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   369
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "Circuit.11 Track System",
+    "https://solluminaire.com.sg/product_tag/circuit-11/"
+   ],
+   [
+    "Indoor",
+    "https://solluminaire.com.sg/product_tag/indoor-lighting/"
+   ],
+   [
+    "Outdoor",
+    "https://solluminaire.com.sg/product_tag/outdoor-lighting/"
+   ]
+  ],
+  "imgs": 3,
+  "trans": "0.5s"
+ },
+ "Sol-T": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   340
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "All Products",
+    "https://solluminaire.com.sg/single-post/sol-t-archive/l-tech/"
+   ],
+   [
+    "Super Smart Panels",
+    "https://solluminaire.com.sg/product_category/super-panel/"
+   ],
+   [
+    "Super Smart Switches",
+    "https://solluminaire.com.sg/product_category/switch/"
+   ],
+   [
+    "Super Smart Dimmer Switches",
+    "https://solluminaire.com.sg/product_category/super-smart-dimmer-switches/"
+   ],
+   [
+    "Super Smart Accessories",
+    "https://solluminaire.com.sg/product_category/super-smart-accessories/"
+   ],
+   [
+    "All Products",
+    "https://solluminaire.com.sg/product_category/kinetic-switch/"
+   ],
+   [
+    "About",
+    "https://solluminaire.com.sg/about-sol-t/"
+   ]
+  ],
+  "imgs": 1,
+  "trans": "0.5s"
+ },
+ "Stories": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   347
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/market-set-arrives-at-rooms-by-sol-luminaire/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/market-set-arrives-at-rooms-by-sol-luminaire/"
+   ],
+   [
+    "The Edit",
+    "https://solluminaire.com.sg/single-post/category/the-edit/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/lights-on-ceo-of-wahbanana-ling-yi-designed-a-boho-farm-house-in-singapore/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/lights-on-ceo-of-wahbanana-ling-yi-designed-a-boho-farm-house-in-singapore/"
+   ],
+   [
+    "Lights On",
+    "https://solluminaire.com.sg/single-post/category/lights-on/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/in-conversation-fiona-tan-on-quiet-luxury-brutalism-and-everyday-wellbeing/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/in-conversation-fiona-tan-on-quiet-luxury-brutalism-and-everyday-wellbeing/"
+   ],
+   [
+    "In Conversation",
+    "https://solluminaire.com.sg/single-post/category/in-conversation/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/sol-meets-taufik-batisah-of-ivory-cove-on-building-a-dream-bali-sanctuary/"
+   ],
+   [
+    "",
+    "https://solluminaire.com.sg/single-post/sol-meets-taufik-batisah-of-ivory-cove-on-building-a-dream-bali-sanctuary/"
+   ],
+   [
+    "Sol Meets",
+    "https://solluminaire.com.sg/single-post/category/sol-meets/"
+   ],
+   [
+    "All Stories/",
+    "https://solluminaire.com.sg/stories/"
+   ]
+  ],
+  "imgs": 4,
+  "trans": "0.5s"
+ },
+ "Rooms": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   430
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "Circuit.11",
+    "https://solluminaire.com.sg/product_tag/circuit-11/"
+   ],
+   [
+    "Indoor",
+    "https://solluminaire.com.sg/product_tag/indoor-lighting/"
+   ],
+   [
+    "Outdoor",
+    "https://solluminaire.com.sg/product_tag/outdoor-lighting/"
+   ],
+   [
+    "Dotti and Pixxi",
+    "https://solluminaire.com.sg/single-post/sol_rooms_arch/dotti-pixxi/"
+   ],
+   [
+    "Pulp",
+    "https://solluminaire.com.sg/single-post/sol_rooms_arch/pulp/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_rooms_arch/lyfa/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_rooms_arch/marketset/"
+   ],
+   [
+    "Bathroom and Kitchen Fixtures",
+    "https://www.hansgrohe.com.sg/"
+   ],
+   [
+    "Home and Wardrobe Accessories",
+    "https://www.kkpl.com.sg/collections/frontpage?gad_source=1&gclid=CjwKCAjw3624BhBAEiwAkxgTOjij7TB4Az_fzj9mACo1M0L9lhN8wZ3yM7EDoAHJQLXbN8IB0fuH0xoC0VkQAvD_BwE"
+   ],
+   [
+    "Textured Wall Finishes",
+    "https://vasari.com.sg/"
+   ],
+   [
+    "Signature Glass Door",
+    "https://oculus-collective.com/"
+   ],
+   [
+    "Glass Bricks and Foam Ceramics",
+    "https://ornate-plus.com/?fbclid=PAZXh0bgNhZW0CMTEAAaZsnmBLGshPgWBxMOibOWn3RReBPNFAJY3L1cXn5O7wrNHu89RIx7F10bM_aem_j-T4b3iic4nR4Yw-fOCRwg"
+   ],
+   [
+    "Ceiling Fans",
+    "https://spinfans.com.sg/?srsltid=AfmBOoqPjm4QbQYn2Uyqa1kXtGGRhHVwi_D0aPGlUQzm8pB3RXutuNqD"
+   ],
+   [
+    "Simon Switches",
+    "https://www.caeruselectric.com/"
+   ],
+   [
+    "About",
+    "https://solluminaire.com.sg/rooms/"
+   ],
+   [
+    "Rooms: The Virtual Tour",
+    "https://solluminaire.com.sg/rooms-virtual-tour/"
+   ]
+  ],
+  "imgs": 1,
+  "trans": "0.5s"
+ },
+ "the LAB2.1": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   340
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "Boba Pendant",
+    "https://solluminaire.com.sg/product_archive/boba-pendant/"
+   ],
+   [
+    "Boba Chain Pendant",
+    "https://solluminaire.com.sg/product_archive/boba-chain-pendant/"
+   ],
+   [
+    "Perforated Boba",
+    "https://solluminaire.com.sg/product_archive/perforated-boba/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/product_archive/a-emotional-light-luminaires/"
+   ],
+   [
+    "Hardwares",
+    "https://solluminaire.com.sg/product_archive/buster-punch-hardwares/"
+   ],
+   [
+    "Switches and Sockets",
+    "https://solluminaire.com.sg/product_archive/buster-punch-switches-and-sockets/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/product_archive/buster-punch-luminaires/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/product_archive/eshen-ceramics/"
+   ],
+   [
+    "Home Fragrance",
+    "https://solluminaire.com.sg/product_archive/mad-et-len-fragrance/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/product_archive/mario-tsai-studio-luminaire/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/product_archive/sonogo/"
+   ],
+   [
+    "About",
+    "https://solluminaire.com.sg/the-lab2-1/"
+   ],
+   [
+    "FAQ",
+    "https://solluminaire.com.sg/the-lab2-1/faq/"
+   ]
+  ],
+  "imgs": 1,
+  "trans": "0.5s"
+ },
+ "Galerie 5": {
+  "open": true,
+  "rect": [
+   0,
+   54,
+   1440,
+   355
+  ],
+  "bg": "rgba(0, 0, 0, 0)",
+  "op": "1",
+  "links": [
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_rooms_arch/lyfa/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/llll/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/makhno-studio/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/forma-rosa-studio/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/sklo/"
+   ],
+   [
+    "Luminaires",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/lightmass/"
+   ],
+   [
+    "Furniture",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/isacelamkaid/"
+   ],
+   [
+    "Furniture",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/frederic-saulou/"
+   ],
+   [
+    "Natura Ceramica",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/natura-ceramica/"
+   ],
+   [
+    "Sticky Glass",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/sticky-glass/"
+   ],
+   [
+    "The Soucy Shop",
+    "https://solluminaire.com.sg/single-post/sol_g5_arch/the-soucy-shop/"
+   ],
+   [
+    "About",
+    "https://solluminaire.com.sg/galerie5/"
+   ]
+  ],
+  "imgs": 1,
+  "trans": "0.5s"
+ }
+}

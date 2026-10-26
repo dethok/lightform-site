@@ -1,0 +1,287 @@
+{
+ "title": "SOJAO - Organic Cotton Bedding for Better Sleep",
+ "html": "js native-share--disabled",
+ "shopify": true,
+ "theme": {
+  "name": "[Main] Sojao x Jumpstart",
+  "id": 136850047229,
+  "schema_name": "Impact",
+  "schema_version": "3.1.1",
+  "theme_store_id": null,
+  "role": "main",
+  "handle": "null",
+  "style": {
+   "id": null,
+   "handle": null
+  }
+ },
+ "libs": [
+  "Flickity",
+  "jQuery"
+ ],
+ "scripts": [
+  "https://admin.revenuehunt.com/embed.js?shop=sojao.myshopify.com",
+  "https://cdn-loyalty.yotpo.com/loader/isnVD-cT0OSlt5nkNElvhg.js?shop=sojao.myshopify.com",
+  "https://staticw2.yotpo.com/HTe4VeeycTR0WPbIPwcz3MppAq9FTdkIqA7QgYlp/widget.js?shop=sojao.myshopify.com",
+  "https://formbuilder.hulkapps.com/skeletopapp.js?shop=sojao.myshopify.com",
+  "https://scripts.clarity.ms/0.8.72-beta/clarity.js",
+  "https://connect.facebook.net/signals/config/1154317351378940?v=2.9.427&r=stable&domain=sojao.shop&hme=766752a074f0cb0756dd3275a46fdecbcfe3de1ab8f573546734b619e44d384f&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C340%2C362%2C248%2C237%2C70%2C238%2C236%2C365%2C356%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+  "https://connect.facebook.net/en_US/fbevents.js",
+  "https://www.googletagmanager.com/gtag/js?id=GT-WPQRSZ3&cx=c&gtm=4e6al1",
+  "https://www.googletagmanager.com/gtag/js?id=AW-821245593&cx=c&gtm=4e6al1",
+  "https://sojao.shop/cdn/s/trekkie.storefront.6efba1340ec6769622eb0d10b5cb070d43fb8d55.min.js",
+  "https://www.clarity.ms/tag/eimdp2m4uu",
+  "https://www.googletagmanager.com/gtag/js?id=G-NPM2CGYW0B&cx=c&gtm=4e6al1",
+  "https://www.googletagmanager.com/gtm.js?id=GTM-PSSKGPQ",
+  "https://static.hotjar.com/c/hotjar-5027946.js?sv=6",
+  "https://sojao.shop/cdn/shop/t/72/assets/vendor.min.js?v=56430842210900357591675234615",
+  "https://sojao.shop/cdn/shop/t/72/assets/theme.js?v=99268844432741801851696399720",
+  "https://sojao.shop/cdn/shop/t/72/assets/sections.js?v=15469940137779405291787901014",
+  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+  "https://sojao.shop/cdn/shop/t/72/assets/flickity.js?v=34135536913576642791732268233",
+  "https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.1.0/cart.min.js",
+  "https://sojao.shop/cdn/shop/t/72/assets/jsc_global_script.js?v=164475449762107441451680502960",
+  "https://sojao.shop/cdn/shop/t/72/assets/jsc-reset-scripts.js?v=68421355236194496001792660321",
+  "https://script.hotjar.com/modules.fe0d6537f87c9cb831d4.js",
+  "https://sojao.shop/checkouts/internal/preloads.js?locale=en-SG&default_configuration_id=5439741",
+  "https://shop.app/checkouts/internal/preloads.js?locale=en-SG&default_configuration_id=5439741&shop_id=21253819",
+  "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+  "https://sojao.shop/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js",
+  "https://sojao.shop/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-f0e26bdf.js?v=20250812",
+  "https://cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js",
+  "https://cdn.shopify.com/extensions/01a16a52-0279-739e-a63a-ebc973cba2f9/easylocation-290/assets/easylocation-storefront.min.js",
+  "https://cdn-widgetsrepository.yotpo.com/v1/loader/isnVD-cT0OSlt5nkNElvhg",
+  "https://cdn-loyalty.yotpo.com/loader/isnVD-cT0OSlt5nkNElvhg.js?shop=sojao.shop",
+  "https://static.klaviyo.com/onsite/js/TAZTQ2/klaviyo.js?company_id=TAZTQ2",
+  "https://cdn-widgetsrepository.yotpo.com/v1/loader/HTe4VeeycTR0WPbIPwcz3MppAq9FTdkIqA7QgYlp?languageCode=en",
+  "https://cdn.nfcube.com/instafeed-d99848a349475ab647adf40dbdf381cd.js",
+  "https://cdn.shopify.com/extensions/01a1541b-402c-7c99-93bc-91e78046780a/revenuehunt-205/assets/embed.js",
+  "https://cdn.shopify.com/extensions/01a16343-3e4e-7b05-ad2c-e3a6661c5cf6/form-builder-by-hulkapps-80/assets/form-builder-script.js",
+  "https://sojao.shop/cdn/wpm/bfcc46ef0w9d3a45bbp8938e2eamdcca70d4m.js",
+  "https://sojao.shop/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js",
+  "https://sojao.shop/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.min.js",
+  "https://sojao.shop/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js",
+  "https://sojao.shop/web-pixels@fcc46ef0w9d3a45bbp8938e2eamdcca70d4/app/web-pixel-535068925@a3321ca85cf5aaf6b57585fcd8d67b3a~2/pixel.modern.js",
+  "https://sojao.shop/web-pixels@fcc46ef0w9d3a45bbp8938e2eamdcca70d4/app/web-pixel-218923261@bd2f978c17a94bbb8a74d43de2165dc5~2/pixel.modern.js",
+  "https://sojao.shop/cdn/shopifycloud/storefront/assets/storefront/webmcp-23c12384.js",
+  "https://static-tracking.klaviyo.com/onsite/js/fender_analytics.d581630832ad2.js?cb=2",
+  "https://static-tracking.klaviyo.com/onsite/js/static.0d6d31623aba7.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/runtime.1240362823bbf.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/vendors~static~in_app_forms~signup_forms~fender_analytics~post_identification_sync~web_personalization~client_identity~server_side_cookies~reviews~atlas~~telemetry.7bfc6cc1e5e87.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/vendors~onsite-personalization~onsite-triggering-v2~in_app_forms~signup_forms~telemetry~~client_identity.18a2c35b6d198.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/vendors~reviews~in_app_forms~signup_forms~atlas~product_recommendations.38d3e585cdff7.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/vendors~in_app_forms~signup_forms.b7c0bc7f31ca6.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/default~in_app_forms~signup_forms.201f86a5de814.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/signup_forms.d8689ef54419d.js?cb=2",
+  "https://static.klaviyo.com/onsite/js/event_adapter.d5d17da8d93c0.js?cb=2",
+  "https://static-tracking.klaviyo.com/onsite/js/telemetry.b2a2da184f5a3.js?cb=2",
+  "https://static-tracking.klaviyo.com/onsite/js/post_identification_sync.7beee9e65774c.js?cb=2",
+  "https://cdn-swell-assets.yotpo.com/app.v1.0.368.js",
+  "https://cdn-widgetsrepository.yotpo.com/widget-assets/yotpo-pixel/2026-05-19_07-47-44/bundle.js",
+  "https://cdn-widgetsrepository.yotpo.com/widget-assets/widgets-initializer/app.v0.9.11-42.js",
+  "https://cdn-widgetsrepository.yotpo.com/widget-assets/yotpo-pixel/2026-05-19_07-47-44/bundle.js",
+  "https://cdn-widgetsrepository.yotpo.com/widget-assets/widgets-initializer/app.v0.9.11-42.js",
+  "https://shopify-gtm-suite.getelevar.com/shops/7f14de8a1a22c88b41bcc97ddaabf6d017ef90fc/2.38.0/gtm-suite.js",
+  "https://cdn.shopify.com/storefront/standard-actions.js",
+  "https://www.googletagmanager.com/gtag/js?id=AW-821245593",
+  "https://www.googletagmanager.com/gtag/js?id=GT-WPQRSZ3",
+  "https://www.googletagmanager.com/gtag/js?id=G-NPM2CGYW0B"
+ ],
+ "fonts": [
+  "Cormorant 500 unloaded",
+  "Cormorant 500 unloaded",
+  "Instrument Sans 400 loaded",
+  "Instrument Sans 400 unloaded",
+  "Instrument Sans 700 loaded",
+  "Instrument Sans 700 unloaded",
+  "FontAwesome normal unloaded",
+  "Montserrat 400 unloaded",
+  "Montserrat 400 unloaded",
+  "Montserrat 400 unloaded",
+  "Montserrat 400 unloaded",
+  "Montserrat 400 unloaded",
+  "Montserrat 700 unloaded",
+  "Montserrat 700 unloaded",
+  "Montserrat 700 unloaded",
+  "Montserrat 700 unloaded",
+  "Montserrat 700 unloaded",
+  "Proxima Nova Regular normal unloaded",
+  "Poynter Oldstyle Disp Reg normal loaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Lora 400 unloaded",
+  "Neuzietofficebolded 700 unloaded",
+  "NotoserifJP 400 unloaded",
+  "Sailec 400 unloaded",
+  "inter 400 error",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 300 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 400 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 700 unloaded",
+  "Open Sans 400 unloaded",
+  "yotpo-widget-font normal unloaded"
+ ],
+ "fontfaceSrc": [
+  "Cormorant | url(\"//sojao.shop/cdn/fonts/cormorant/cormorant_n5.897f6a30ce53863d490505c0132c13f3a2107ba7.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/fonts/cormo",
+  "Cormorant | url(\"//sojao.shop/cdn/fonts/cormorant/cormorant_i5.5f44803b5f0edb410d154f596e709a324a72bde3.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/fonts/cormo",
+  "\"Instrument Sans\" | url(\"//sojao.shop/cdn/fonts/instrument_sans/instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/",
+  "\"Instrument Sans\" | url(\"//sojao.shop/cdn/fonts/instrument_sans/instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/",
+  "\"Instrument Sans\" | url(\"//sojao.shop/cdn/fonts/instrument_sans/instrumentsans_n7.e4ad9032e203f9a0977786c356573ced65a7419a.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/",
+  "\"Instrument Sans\" | url(\"//sojao.shop/cdn/fonts/instrument_sans/instrumentsans_i7.d6063bb5d8f9cbf96eace9e8801697c54f363c6a.woff2\") format(\"woff2\"), url(\"//sojao.shop/cdn/",
+  "\"Proxima Nova Regular\" | url(\"https://cdn.shopify.com/s/files/1/1440/2440/files/ProximaNova-Regular_1.woff?v=1667273548\") format(\"woff\"), url(\"https://cdn.shopify.com/s/files/",
+  "\"Poynter Oldstyle Disp Reg\" | url(\"//fastly-cloud.typenetwork.com/projects/7013/581_vdef_emp_85d0.woff2?c5a6a9d55bb7a732269b1f215cfa17f02799a58f\") format(\"woff2\"), url(\"//fastly-cl",
+  "Neuzietofficebolded | url(\"https://cdn.shopify.com/s/files/1/2125/3819/files/3bde563f99f412133b436129cc493ab7.woff2?v=1685069806\")",
+  "NotoserifJP | url(\"https://fonts.gstatic.com/s/notoserifjp/v21/xn7mYHs72GKoTvER4Gn3b5eMXNvMckQlPa61uNKcCqOfbtLXoH3502Rk.118.woff2\")",
+  "Sailec | url(\"https://cdn.shopify.com/s/files/1/2125/3819/t/40/assets/7908e7be605377f17d6c0f074e33a3d9.woff2\")",
+  "inter | url(\"chrome-extension://kbfnbcaeplbcioakkpcpgfkobkghlhen/src/fonts/1258fcda79d43bef/inter_Inter-Regular.woff\")"
+ ],
+ "videos": [
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/a2a5ddd474b84ccf82351025b1183fde/a2a5ddd474b84ccf82351025b1183fde.HD-1080p-7.2Mbps-97811065.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  },
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/352bc6a3caf64ee8a06c4aa13118ece7/352bc6a3caf64ee8a06c4aa13118ece7.HD-1080p-7.2Mbps-97811175.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  },
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/7f367c1bc99640dc9b89e5144e0ab2b7/7f367c1bc99640dc9b89e5144e0ab2b7.HD-1080p-7.2Mbps-91569516.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  },
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/585fa4ce349d4366a5ffd7d065b73232/585fa4ce349d4366a5ffd7d065b73232.HD-1080p-7.2Mbps-91569563.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  },
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/732048ab330a466986db383da5c0630d/732048ab330a466986db383da5c0630d.HD-1080p-7.2Mbps-89968472.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  },
+  {
+   "src": "https://sojao.shop/cdn/shop/videos/c/vp/69efe027a30f4c7e9aee0534afc8d908/69efe027a30f4c7e9aee0534afc8d908.HD-1080p-7.2Mbps-91503336.mp4?v=0",
+   "auto": false,
+   "loop": true,
+   "muted": true
+  }
+ ],
+ "sections": [
+  {
+   "id": "shopify-section-announcement-bar",
+   "cls": "shopify-section shopify-section--announcement-bar",
+   "y": 0,
+   "h": 42
+  },
+  {
+   "id": "shopify-section-header",
+   "cls": "shopify-section shopify-section--header",
+   "y": 42,
+   "h": 74
+  },
+  {
+   "id": "shopify-section-newsletter-popup",
+   "cls": "shopify-section shopify-section--popup",
+   "y": 116,
+   "h": 0
+  },
+  {
+   "id": "shopify-section-search-drawer",
+   "cls": "shopify-section",
+   "y": 116,
+   "h": 0
+  },
+  {
+   "id": "shopify-section-template--16751938830589__slideshow",
+   "cls": "shopify-section shopify-section--slideshow",
+   "y": 42,
+   "h": 858
+  },
+  {
+   "id": "shopify-section-template--16751938830589__scrolling_text_WYDqw6",
+   "cls": "shopify-section shopify-section--scrolling-text",
+   "y": 900,
+   "h": 56
+  },
+  {
+   "id": "shopify-section-template--16751938830589__featured-collection",
+   "cls": "shopify-section shopify-section--featured-collection",
+   "y": 956,
+   "h": 676
+  },
+  {
+   "id": "shopify-section-template--16751938830589__jsc_section_set_builder_ix3eay",
+   "cls": "shopify-section shopify-section--jsc-set-builder",
+   "y": 1632,
+   "h": 753
+  },
+  {
+   "id": "shopify-section-template--16751938830589__featured_collection_DU9rxx",
+   "cls": "shopify-section shopify-section--featured-collection",
+   "y": 2385,
+   "h": 756
+  },
+  {
+   "id": "shopify-section-template--16751938830589__17871215922004f3a4",
+   "cls": "shopify-section shopify-section--apps",
+   "y": 3140,
+   "h": 486
+  },
+  {
+   "id": "shopify-section-template--16751938830589__ee747dbb-8eb8-4811-a93b-ab96dcef137d",
+   "cls": "shopify-section shopify-section--jsc-image-w-text",
+   "y": 3626,
+   "h": 241
+  },
+  {
+   "id": "shopify-section-static-text-with-icons",
+   "cls": "shopify-section shopify-section--text-with-icons",
+   "y": 0,
+   "h": 0
+  },
+  {
+   "id": "shopify-section-footer",
+   "cls": "shopify-section shopify-section--footer",
+   "y": 3868,
+   "h": 580
+  }
+ ],
+ "root": 0
+}

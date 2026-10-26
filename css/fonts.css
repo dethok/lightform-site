@@ -1,0 +1,8 @@
+/* V1 - Fraunces + Instrument Sans (stand-ins for the references' licensed faces). */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500;600&display=swap");
+:root{
+  --font-display:"Fraunces",Georgia,serif;
+  --display-weight:400; --display-style:normal; --display-tracking:-0.02em; --display-lh:1.02; --display-scale:1;
+  --font-body:"Instrument Sans",system-ui,sans-serif; --body-tracking:-0.01em;
+  --font-mono:"Instrument Sans",system-ui,sans-serif; --mono-tracking:0.12em; --mono-transform:uppercase; --mono-weight:500;
+}
