@@ -1,18 +1,24 @@
 {%- assign variant = product.selected_or_first_available_variant -%}
 {%- assign images = product.media | where: 'media_type', 'image' -%}
+{%- assign models = product.media | where: 'media_type', 'model' -%}
 <div class="container">
   <div class="pdp">
     <div class="pdp-gallery">
-      {% for media in images %}<div class="lamp g-slide{% if forloop.first %} is-active{% endif %}" style="--lx:50%;--ly:42%">{{ media | image_url: width: 1000 | image_tag: loading: 'lazy', alt: media.alt | default: product.title }}</div>
+      {% for media in product.media %}{% case media.media_type %}{% when 'image' %}<div class="lamp g-slide{% if forloop.first %} is-active{% endif %}" style="--lx:50%;--ly:42%">{{ media | image_url: width: 1000 | image_tag: loading: 'lazy', alt: media.alt | default: product.title }}</div>{% when 'model' %}<div class="g-slide g-slide-model{% if forloop.first %} is-active{% endif %}" data-media-id="{{ media.id }}">{{ media | media_tag: image_size: '1000x' }}</div>{% endcase %}
       {% else %}<div class="lamp g-slide is-active" style="--lx:50%;--ly:42%"><span class="ph">product photo to come</span></div>
       {% endfor %}
-      {% if images.size > 0 %}
+      {% if images.size > 0 or models.size > 0 %}
         <div class="g-bar">
           <button class="btn btn-ghost btn-sm" type="button" data-lights aria-pressed="false">Lights on</button>
+          {% if models.size > 0 %}<button class="btn btn-ghost btn-sm" type="button" data-shopify-xr data-shopify-model3d-id="{{ models.first.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>View in your room</button>{% endif %}
           <div class="g-thumbs">
-            {% for media in images %}<button type="button" data-thumb aria-label="View image {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}</button>{% endfor %}
+            {% for media in product.media %}{% case media.media_type %}{% when 'image' %}<button type="button" data-thumb aria-label="View image {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}</button>{% when 'model' %}<button type="button" data-thumb class="thumb-3d" aria-label="View 3D model" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media.preview_image | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}<span class="mono">3D</span></button>{% endcase %}{% endfor %}
           </div>
         </div>
+        {% if models.size > 0 %}
+          <script type="application/json" id="ProductJSON-{{ product.id }}">{{ models | json }}</script>
+          <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+        {% endif %}
       {% endif %}
     </div>
     <div class="pdp-buy">
@@ -63,7 +69,12 @@
 </section>
 {%- endif -%}
 
-{% style %}.pdp>*{min-width:0}.g-thumbs{overflow-x:auto}{% endstyle %}
+{% style %}
+.pdp>*{min-width:0}.g-thumbs{overflow-x:auto}
+.g-slide-model{aspect-ratio:1/1;background:var(--paper-2)}
+.g-slide-model model-viewer{width:100%;height:100%}
+.thumb-3d{position:relative}.thumb-3d .mono{position:absolute;right:4px;bottom:4px;font-size:10px;background:var(--paper-2);padding:0 4px}
+{% endstyle %}
 
 {% schema %}
 {
