@@ -17,6 +17,7 @@
         </div>
         {% if models.size > 0 %}
           <script type="application/json" id="ProductJSON-{{ product.id }}">{{ models | json }}</script>
+          <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
           <script src="{{ 'product-model.js' | asset_url }}" defer></script>
         {% endif %}
       {% endif %}
@@ -71,8 +72,9 @@
 
 {% style %}
 .pdp>*{min-width:0}.g-thumbs{overflow-x:auto}
-.g-slide-model{aspect-ratio:1/1;background:var(--paper-2)}
-.g-slide-model model-viewer{width:100%;height:100%}
+.g-slide-model{aspect-ratio:1/1;background:var(--paper-2);position:relative}
+.g-slide-model .shopify-model-viewer-ui,.g-slide-model model-viewer{display:block;width:100%;height:100%}
+[data-shopify-xr-hidden]{display:none!important}
 .thumb-3d{position:relative}.thumb-3d .mono{position:absolute;right:4px;bottom:4px;font-size:10px;background:var(--paper-2);padding:0 4px}
 {% endstyle %}
 
