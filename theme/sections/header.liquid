@@ -1,0 +1,44 @@
+<header class="site-header">
+  <div class="container header-in">
+    <a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/pages/about">About</a>
+      <a href="/pages/services">Services</a>
+      <a href="/pages/brands">Brands</a>
+      <div class="has-mega">
+        <button class="mega-trigger" type="button" aria-expanded="false" aria-controls="mega">Shop <span class="chev" aria-hidden="true"></span></button>
+        <div class="mega" id="mega">
+          <div class="mega-in">
+            <div class="mega-col"><a class="mega-head mono" href="/pages/brands">Shop by brands</a><ul><li><a href="/pages/brands#david-trubridge">David Trubridge</a></li><li><a href="/pages/brands#innolux">Innolux</a></li><li><a href="/pages/brands#possoni">Possoni</a></li><li><a href="/pages/brands#innermost">Innermost</a></li><li><a href="/pages/brands#siru">Siru</a></li><li><a href="/pages/brands#swarovski-lighting">Swarovski Lighting</a></li></ul></div>
+            {% comment %}ponytail: categories come from Theme settings → Shop, not shop.types — shop.types includes draft-only junk types that 404, and scanning collections.all.products only sees the first 50 of 332{% endcomment %}<div class="mega-col"><a class="mega-head mono" href="{{ routes.collections_url }}">Shop by collections</a><ul>{% assign cats = settings.shop_categories | newline_to_br | split: '<br />' %}{% for raw in cats %}{% assign t = raw | strip %}{% if t == blank %}{% continue %}{% endif %}<li><a href="{{ t | url_for_type }}">{{ t }}</a></li>{% endfor %}{% if cats.size == 0 %}<li><span class="ph">add categories in Theme settings → Shop</span></li>{% endif %}</ul></div>
+            <div class="mega-col"><a class="mega-head mono" href="{{ routes.all_products_collection_url }}">Shop by products</a><ul>{% for p in collections.all.products limit: 5 %}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{% endfor %}{% if collections.all.products.size == 0 %}<li><span class="ph">products appear here once added in Shopify</span></li>{% endif %}<li><a href="{{ routes.all_products_collection_url }}">All products</a></li></ul></div>
+            <a class="mega-tile" href="{{ routes.all_products_collection_url }}"><div class="lamp" style="--lx:50%;--ly:30%"><img src="{{ 'innolux-bulbo.jpg' | asset_url }}" alt="Innolux Bulbo pendant lamp" width="700" height="800" loading="lazy"></div><span class="mono">Bulbo &middot; Innolux</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="/pages/contact">Contact Us</a>
+    </nav>
+    <div class="header-r">
+      <a class="ig-link" href="https://www.instagram.com/lightformconcepts/" aria-label="Light + Form Concepts on Instagram" rel="noopener"><span class="ico ico-ig" aria-hidden="true"></span></a>
+      <a class="visit" href="/pages/contact">Visit the showroom</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span class="ico ico-menu" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<div class="dim" aria-hidden="true"></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top"><a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a><button class="drawer-close" type="button" aria-label="Close menu"><span class="ico ico-close" aria-hidden="true"></span></button></div>
+  <ul class="drawer-list">
+    <li style="--i:0"><a href="/pages/about">About</a></li>
+    <li style="--i:1"><a href="/pages/services">Services</a></li>
+    <li style="--i:2"><a href="/pages/brands">Brands</a></li>
+    <li><span class="drawer-label" style="--i:3">Shop</span>
+      <ul class="sub"><li style="--i:4"><a href="/pages/brands">Shop by brands</a></li><li style="--i:5"><a href="{{ routes.collections_url }}">Shop by collections</a></li><li style="--i:6"><a href="{{ routes.all_products_collection_url }}">Shop by products</a></li></ul></li>
+    <li style="--i:7"><a href="/pages/contact">Contact Us</a></li>
+  </ul>
+  <div class="drawer-meta mono" style="--i:8"><a href="/pages/contact">Visit the showroom</a><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram</a></div>
+</div>
+
+{% schema %}
+{"name": "Header", "settings": []}
+{% endschema %}

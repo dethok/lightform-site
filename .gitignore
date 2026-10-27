@@ -11,3 +11,4 @@ showcase/
 docs/
 dist/
 *.log
+backups/

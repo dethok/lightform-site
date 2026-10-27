@@ -1,0 +1,21 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Light + Form (Dethok)",
+    "theme_version": "0.1.0",
+    "theme_author": "Dethok",
+    "theme_documentation_url": "https://dethok.com",
+    "theme_support_url": "https://dethok.com"
+  },
+  {
+    "name": "Shop",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "shop_categories",
+        "label": "Shop categories (one per line, must match the Product type field exactly)",
+        "default": "Ceiling Light\nDownlight\nHanging Light\nMagnetic Track Light\nOutdoor Light\nStanding Light\nTable Light\nWall Light\nHaiku Fan"
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+<section class="page-head"><div class="container reveal"><span class="eyebrow">Cart</span><h1>Your cart.</h1></div></section>
+<section class="section"><div class="container">
+{% if cart.item_count == 0 %}
+  <p>Your cart is empty.</p>
+  <a class="btn btn-primary" href="{{ routes.all_products_collection_url }}">Shop the collection</a>
+{% else %}
+  {% form 'cart', cart %}
+    <table class="spec cart-table"><tbody>
+      {% for item in cart.items %}
+        <tr>
+          <td>{% if item.image %}<a href="{{ item.url }}">{{ item.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: item.product.title }}</a>{% endif %}</td>
+          <td><a href="{{ item.url }}">{{ item.product.title }}</a>{% unless item.product.has_only_default_variant %}<span class="mono">{{ item.variant.title }}</span>{% endunless %}</td>
+          <td><input class="qty" type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity"></td>
+          <td>{{ item.final_line_price | money }}</td>
+          <td><a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity=0">Remove</a></td>
+        </tr>
+      {% endfor %}
+    </tbody></table>
+    <p><span class="mono">Subtotal</span> {{ cart.total_price | money }}</p>
+    <p class="small">Taxes and shipping calculated at checkout.</p>
+    <div class="buy-actions">
+      <button class="btn btn-ghost" type="submit" name="update">Update</button>
+      <button class="btn btn-primary" type="submit" name="checkout">Checkout</button>
+    </div>
+  {% endform %}
+{% endif %}
+</div></section>
+{% style %}
+  .cart-table td{vertical-align:middle;padding-right:16px}
+  .cart-table img{width:80px;height:auto;display:block}
+  .cart-table .mono{display:block;color:var(--ink-2)}
+  .qty{width:64px;border:0;border-bottom:1px solid var(--ink-2);background:transparent;padding:8px 0}
+{% endstyle %}
+
+{% schema %}
+{"name": "Cart", "settings": []}
+{% endschema %}

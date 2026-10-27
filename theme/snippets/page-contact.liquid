@@ -1,0 +1,43 @@
+{% style %}
+.form-ok,.form-err{font-family:var(--font-mono);font-size:13px;margin:0 0 20px}
+.form-ok{color:var(--ink-2)}
+.form-err{color:var(--accent)}
+{% endstyle %}
+  <section class="visit-split" aria-labelledby="ct-h">
+    <div class="visit-panel reveal">
+      <span class="eyebrow">Visit</span>
+      <h1 id="ct-h">Lights on daily.</h1>
+      <address>341 Balestier Road #01-02<br>Singapore 329773</address>
+      <ul>
+        <li>Mon&ndash;Sat 10am&ndash;7pm &middot; Sun 11am&ndash;7pm</li>
+        <li><a href="tel:+6568982555">(65) 6898 2555</a></li>
+        <li><a href="mailto:eSupport@light-pro.com">eSupport@light-pro.com</a></li>
+        <li><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram @lightformconcepts</a></li>
+      </ul>
+    </div>
+    <div class="visit-photo"><img src="{{ 'hero-storefront.jpg' | asset_url }}" alt="The Light + Form Concepts storefront on Balestier Road" width="1600" height="774"></div>
+  </section>
+
+  <section class="section" aria-label="Map">
+    <div class="container reveal">
+      <span class="mono cap">341 Balestier Road #01-02</span><div class="map"><iframe title="Map: 341 Balestier Road, Singapore" loading="eager" src="https://www.openstreetmap.org/export/embed.html?bbox=103.8482,1.3222,103.8542,1.3262&amp;layer=mapnik&amp;marker=1.3241832,103.8511996"></iframe></div>
+      <div class="map-bar"><a class="link-arrow" href="https://maps.google.com/?q=341+Balestier+Road+%2301-02+Singapore+329773" rel="noopener">Open in Google Maps <span class="ico ico-arrow" aria-hidden="true"></span></a></div>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="msg-h">
+    <div class="container form-wrap">
+      <div class="sec-head reveal"><span class="eyebrow">Message</span><h2 id="msg-h">Send us a note.</h2></div>
+      {% form 'contact', class: 'reveal' %}
+        {% if form.posted_successfully? %}<p class="form-ok" role="status">Thanks &mdash; we&rsquo;ll get back to you within a working day.</p>{% endif %}{% if form.errors %}<p class="form-err" role="alert">{{ form.errors | default_errors }}</p>{% endif %}
+
+        <div class="f-grid">
+          <label class="f-row"><span class="mono">Name</span><input type="text" name="contact[name]" autocomplete="name"></label>
+          <label class="f-row"><span class="mono">Email</span><input type="email" name="contact[email]" required autocomplete="email"></label>
+          <label class="f-row wide"><span class="mono">Phone</span><input type="tel" name="contact[phone]" autocomplete="tel"></label>
+          <label class="f-row wide"><span class="mono">Message</span><textarea name="contact[body]" required rows="4"></textarea></label>
+        </div>
+        <div class="f-act"><button class="btn btn-primary" type="submit">Send message</button></div>
+      {% endform %}
+    </div>
+  </section>

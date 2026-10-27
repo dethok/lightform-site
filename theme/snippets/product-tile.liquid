@@ -1,0 +1,5 @@
+{% doc %}
+  @param {product} product
+  @param {number} delay - reveal stagger in seconds
+{% enddoc %}
+<a class="tile reveal" style="--d:{{ delay }}s" href="{{ product.url }}"><div class="lamp" style="--lx:50%;--ly:42%">{% if product.featured_image %}{{ product.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: product.title }}{% else %}<span class="ph">photo to come</span>{% endif %}</div><div class="tile-row"><div class="tile-id"><h3 class="tile-name">{{ product.title }}</h3><span class="mono">{{ product.type | default: product.vendor }}</span></div><span class="tile-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</span></div></a>

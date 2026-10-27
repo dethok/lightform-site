@@ -1,0 +1,24 @@
+<section class="page-head"><div class="container reveal"><h1>Search.</h1>
+  {% form 'search' %}
+    <label class="f-row"><span class="mono">Search the site</span><input type="search" name="q" value="{{ search.terms | escape }}"></label>
+    <button class="btn btn-primary" type="submit">Search</button>
+  {% endform %}
+</div></section>
+<section class="section"><div class="container">
+{% if search.performed %}
+  {% if search.results_count == 0 %}
+    <p>No results for &ldquo;{{ search.terms | escape }}&rdquo;.</p>
+  {% else %}
+    {% paginate search.results by 20 %}
+      <div class="grid-tiles">{% for r in search.results %}{% if r.object_type == 'product' %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: r, delay: dl %}{% endif %}{% endfor %}</div>
+      <ul>{% for r in search.results %}{% unless r.object_type == 'product' %}<li><a href="{{ r.url }}">{{ r.title }}</a></li>{% endunless %}{% endfor %}</ul>
+      <nav class="mono pagination">{{ paginate | default_pagination }}</nav>
+    {% endpaginate %}
+  {% endif %}
+{% endif %}
+</div></section>
+{% style %}.pagination{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}{% endstyle %}
+
+{% schema %}
+{"name": "Search", "settings": []}
+{% endschema %}

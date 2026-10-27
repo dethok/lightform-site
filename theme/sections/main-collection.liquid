@@ -1,0 +1,16 @@
+<section class="page-head"><div class="container reveal"><span class="eyebrow">Shop</span><h1>{{ collection.title }}.</h1>{% if collection.description != blank %}<p class="lede">{{ collection.description | strip_html }}</p>{% endif %}</div></section>
+<section class="section"><div class="container">
+  {% paginate collection.products by 24 %}
+    {% if collection.products.size == 0 %}
+      <p class="ph">No products in this collection yet.</p>
+    {% else %}
+      <div class="grid-tiles">{% for p in collection.products %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: p, delay: dl %}{% endfor %}</div>
+      <nav class="mono pagination">{{ paginate | default_pagination }}</nav>
+    {% endif %}
+  {% endpaginate %}
+</div></section>
+{% style %}.pagination{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}{% endstyle %}
+
+{% schema %}
+{"name": "Collection", "settings": []}
+{% endschema %}

@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "hero": {"type": "hero", "settings": {}},
+    "brands": {"type": "home-brands", "settings": {}},
+    "writeup": {"type": "home-writeup", "settings": {}}
+  },
+  "order": ["hero", "brands", "writeup"]
+}

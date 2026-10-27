@@ -1,0 +1,51 @@
+<section class="page-head" aria-labelledby="shop-h"><div class="container reveal"><span class="eyebrow">Shop</span><h1 id="shop-h">Shop.</h1><p class="lede">Browse the showroom by brand, by collection or by product. Prices are in SGD.</p></div></section>
+{% comment %}ponytail: vendor route instead of per-brand collections — never 404s before the client creates collections{% endcomment %}
+<section class="section" id="by-brand" aria-labelledby="by-brand-h"><div class="container">
+  <div class="sec-head reveal"><span class="eyebrow">Shop by brand</span><h2 id="by-brand-h">By brand.</h2></div>
+  {% comment %}ponytail: the vendor route hard-404s when no product carries the vendor (all 54 products are vendor "Light + Form" today), so brand links fall back to the brand page until the client fills Vendor; `where` sees the first 50 products only{% endcomment %}
+  <div class="dir reveal"><div class="dir-cols">{% assign vp = collections.all.products | where: 'vendor', 'David Trubridge' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'David Trubridge' | url_for_vendor }}{% else %}/pages/brands#david-trubridge{% endif %}">David Trubridge</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'David Trubridge' | url_for_vendor }}">All David Trubridge products</a></li>{% endif %}<li><a href="/pages/brands#david-trubridge">About the brand</a></li></ul></div>{% assign vp = collections.all.products | where: 'vendor', 'Innolux' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'Innolux' | url_for_vendor }}{% else %}/pages/brands#innolux{% endif %}">Innolux</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'Innolux' | url_for_vendor }}">All Innolux products</a></li>{% endif %}<li><a href="/pages/brands#innolux">About the brand</a></li></ul></div>{% assign vp = collections.all.products | where: 'vendor', 'Possoni' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'Possoni' | url_for_vendor }}{% else %}/pages/brands#possoni{% endif %}">Possoni</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'Possoni' | url_for_vendor }}">All Possoni products</a></li>{% endif %}<li><a href="/pages/brands#possoni">About the brand</a></li></ul></div>{% assign vp = collections.all.products | where: 'vendor', 'Innermost' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'Innermost' | url_for_vendor }}{% else %}/pages/brands#innermost{% endif %}">Innermost</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'Innermost' | url_for_vendor }}">All Innermost products</a></li>{% endif %}<li><a href="/pages/brands#innermost">About the brand</a></li></ul></div>{% assign vp = collections.all.products | where: 'vendor', 'Siru' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'Siru' | url_for_vendor }}{% else %}/pages/brands#siru{% endif %}">Siru</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'Siru' | url_for_vendor }}">All Siru products</a></li>{% endif %}<li><a href="/pages/brands#siru">About the brand</a></li></ul></div>{% assign vp = collections.all.products | where: 'vendor', 'Swarovski Lighting' %}<div class="dir-brand"><a class="dir-name" href="{% if vp.size > 0 %}{{ 'Swarovski Lighting' | url_for_vendor }}{% else %}/pages/brands#swarovski-lighting{% endif %}">Swarovski Lighting</a><ul>{% if vp.size > 0 %}<li><a href="{{ 'Swarovski Lighting' | url_for_vendor }}">All Swarovski Lighting products</a></li>{% endif %}<li><a href="/pages/brands#swarovski-lighting">About the brand</a></li></ul></div></div><div class="lamp dir-hero" style="--lx:50%;--ly:48%"><img src="{{ 'trubridge-coral-red.jpg' | asset_url }}" alt="David Trubridge Coral pendant in red" width="700" height="800" loading="lazy"></div></div>
+</div></section>
+<section class="section band" id="by-collection" aria-labelledby="by-collection-h"><div class="container">
+  <div class="sec-head reveal"><span class="eyebrow">Shop by collection</span><h2 id="by-collection-h">By collection.</h2></div>
+  {% comment %}ponytail: categories = Theme settings → Shop (one per line); shop.types carries draft-only junk that 404s. Tile image = first product of that type among the first 250 (paginate cap); a category with no image in that window shows "photo to come".{% endcomment %}
+  {% assign cats = settings.shop_categories | newline_to_br | split: '<br />' %}
+  <div class="grid-5">
+    {% paginate collections.all.products by 250 %}
+    {% for raw in cats %}
+      {% assign t = raw | strip %}{% if t == blank %}{% continue %}{% endif %}
+      {% assign img = nil %}
+      {% for p in collections.all.products %}{% if p.type == t and p.featured_image %}{% assign img = p.featured_image %}{% break %}{% endif %}{% endfor %}
+      {% assign dl = forloop.index0 | modulo: 5 | times: 0.06 %}
+      <a class="tile reveal" style="--d:{{ dl }}s" href="{{ t | url_for_type }}"><div class="lamp" style="--lx:50%;--ly:40%">{% if img %}{{ img | image_url: width: 800 | image_tag: loading: 'lazy', alt: t }}{% else %}<span class="ph">photo to come</span>{% endif %}</div><div class="tile-row"><h3 class="tile-name">{{ t }}</h3></div></a>
+    {% else %}
+      <p class="ph">add categories in Theme settings → Shop</p>
+    {% endfor %}
+    {% endpaginate %}
+  </div>
+  {% assign curated = 0 %}
+  {% for c in collections %}{% unless c.handle == 'frontpage' %}{% assign curated = curated | plus: 1 %}{% endunless %}{% endfor %}
+  {% if curated > 0 %}
+    <div class="sec-head reveal" style="margin-top:var(--gap-y);padding-top:28px;border-top:1px solid var(--hairline)"><span class="eyebrow">Curated collections</span></div>
+    <div class="grid-5">
+      {% for c in collections %}
+        {% if c.handle == 'frontpage' %}{% continue %}{% endif %}
+        {% assign dl = forloop.index0 | modulo: 5 | times: 0.06 %}
+        <a class="tile reveal" style="--d:{{ dl }}s" href="{{ c.url }}"><div class="lamp" style="--lx:50%;--ly:40%">{% if c.featured_image %}{{ c.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: c.title }}{% else %}<span class="ph">add an image to this collection</span>{% endif %}</div><div class="tile-row"><h3 class="tile-name">{{ c.title }}</h3></div></a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div></section>
+<section class="section" id="by-product" aria-labelledby="by-product-h"><div class="container">
+  <div class="sec-head reveal"><span class="eyebrow">Shop by product</span><h2 id="by-product-h">All {{ collections.all.products_count }} products.</h2></div>
+  {% if collections.all.products_count == 0 %}<p class="ph">products appear here once added in Shopify</p>{% else %}
+  {% paginate collections.all.products by 12 %}
+    <div class="grid-tiles">{% for p in collections.all.products %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: p, delay: dl %}{% endfor %}</div>
+    <nav class="mono pagination">{{ paginate | default_pagination }}</nav>
+  {% endpaginate %}
+  {% endif %}
+</div></section>
+{% style %}.pagination{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}{% endstyle %}
+
+{% schema %}
+{"name": "Shop", "settings": []}
+{% endschema %}

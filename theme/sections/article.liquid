@@ -1,0 +1,10 @@
+<section class="page-head"><div class="container reveal"><span class="eyebrow">{{ blog.title }}</span><h1>{{ article.title }}</h1><p class="mono">{{ article.published_at | time_tag: format: 'date' }}</p></div></section>
+<section class="section"><div class="container rte">
+  {% if article.image %}{{ article.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: article.title }}{% endif %}
+  {{ article.content }}
+</div></section>
+
+{% comment %}ponytail: comments omitted — add when the client turns comments on{% endcomment %}
+{% schema %}
+{"name": "Article", "settings": []}
+{% endschema %}

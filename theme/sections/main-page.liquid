@@ -1,0 +1,14 @@
+{% comment %} ponytail: dispatch on page handle instead of per-page templates — the admin's template dropdown only lists the LIVE theme's templates, so assigning page.about etc. would be impossible until launch. Page body content in admin is ignored for these four handles. {% endcomment %}
+{% case page.handle %}
+  {% when 'about' %}{% render 'page-about' %}
+  {% when 'services' %}{% render 'page-services' %}
+  {% when 'brands' %}{% render 'page-brands' %}
+  {% when 'contact' %}{% render 'page-contact' %}
+  {% else %}
+    <section class="page-head"><div class="container reveal"><h1>{{ page.title }}</h1></div></section>
+    <section class="section"><div class="container rte">{{ page.content }}</div></section>
+{% endcase %}
+
+{% schema %}
+{"name": "Page", "settings": []}
+{% endschema %}

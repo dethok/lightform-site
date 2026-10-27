@@ -1,0 +1,23 @@
+{% # theme-check-disable ParserBlockingScript %}
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% render 'meta-tags' %}
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+    {{ 'site.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'site.js' | asset_url }}"></script>
+    {{ content_for_header }}
+  </head>
+
+  <body class="{% if template.name == 'index' %}has-hero{% endif %}">
+    <a class="skip" href="#main">Skip to content</a>
+    {% sections 'header-group' %}
+    <main id="main">{{ content_for_layout }}</main>
+    {% sections 'footer-group' %}
+  </body>
+</html>

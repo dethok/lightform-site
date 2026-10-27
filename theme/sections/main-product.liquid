@@ -1,0 +1,76 @@
+{%- assign variant = product.selected_or_first_available_variant -%}
+{%- assign images = product.media | where: 'media_type', 'image' -%}
+<div class="container">
+  <div class="pdp">
+    <div class="pdp-gallery">
+      {% for media in images %}<div class="lamp g-slide{% if forloop.first %} is-active{% endif %}" style="--lx:50%;--ly:42%">{{ media | image_url: width: 1000 | image_tag: loading: 'lazy', alt: media.alt | default: product.title }}</div>
+      {% else %}<div class="lamp g-slide is-active" style="--lx:50%;--ly:42%"><span class="ph">product photo to come</span></div>
+      {% endfor %}
+      {% if images.size > 0 %}
+        <div class="g-bar">
+          <button class="btn btn-ghost btn-sm" type="button" data-lights aria-pressed="false">Lights on</button>
+          <div class="g-thumbs">
+            {% for media in images %}<button type="button" data-thumb aria-label="View image {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}</button>{% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="pdp-buy">
+      <span class="eyebrow">{{ product.type | default: product.vendor }}</span>
+      <h1>{{ product.title }}</h1>
+      {% if product.description != blank %}<div class="body rte">{{ product.description }}</div>{% endif %}
+      <p class="price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</p>
+      {% comment %}ponytail: single variant <select>, no option-matrix JS; add when a product has 2+ options that need separate pickers{% endcomment %}
+      {% form 'product', product %}
+        {% if product.variants.size > 1 %}
+          <label class="field"><span class="mono">Options</span><select name="id">{% for v in product.variants %}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}{% if v == variant %} selected{% endif %}>{{ v.title }} &mdash; {{ v.price | money }}{% unless v.available %} &mdash; sold out{% endunless %}</option>{% endfor %}</select></label>
+        {% else %}
+          <input type="hidden" name="id" value="{{ variant.id }}">
+        {% endif %}
+        <div class="buy-actions">
+          <button class="btn btn-primary" type="submit" name="add"{% unless product.available %} disabled{% endunless %}>{% if product.available %}Add to cart{% else %}Sold out{% endif %}</button>
+          <a class="btn btn-ghost" href="/pages/contact">Enquire about this piece</a>
+        </div>
+      {% endform %}
+      {% if section.settings.note_text != blank %}<div class="note"><span class="mono">{{ section.settings.note_label }}</span>{{ section.settings.note_text }}</div>{% endif %}
+      {% comment %}ponytail: specs = metafield custom.specs (rich text) when the client adds one{% endcomment %}
+      <details class="specs">
+        <summary>Product Details</summary>
+        {% if product.metafields.custom.specs != blank %}{{ product.metafields.custom.specs | metafield_tag }}{% else %}
+        <table class="spec"><tbody><tr><th scope="row">Wattage</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Colour temperature</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">CRI</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Lumens</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Dimming</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Material</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Dimensions</th><td><span class="ph">to be confirmed</span></td></tr></tbody></table>
+        {% endif %}
+      </details>
+    </div>
+  </div>
+</div>
+{%- assign rel = product.collections.first.products -%}
+{%- if rel == blank or rel.size < 2 -%}{%- assign rel = collections.all.products -%}{%- endif -%}
+{%- capture related_html -%}
+  {%- assign n = 0 -%}
+  {%- for item in rel limit: 5 -%}
+    {%- if item.id == product.id or n >= 4 -%}{%- continue -%}{%- endif -%}
+    {%- assign dl = n | times: 0.08 -%}
+    {%- render 'product-tile', product: item, delay: dl -%}
+    {%- assign n = n | plus: 1 -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if related_html != blank -%}
+<section class="related" aria-labelledby="rel-h">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow">Related</span><h2 id="rel-h">You may also like.</h2></div>
+    <div class="grid-4">{{ related_html }}</div>
+  </div>
+</section>
+{%- endif -%}
+
+{% style %}.pdp>*{min-width:0}.g-thumbs{overflow-x:auto}{% endstyle %}
+
+{% schema %}
+{
+  "name": "Product",
+  "settings": [
+    {"type": "text", "id": "note_label", "label": "Note label"},
+    {"type": "text", "id": "note_text", "label": "Note text"}
+  ]
+}
+{% endschema %}

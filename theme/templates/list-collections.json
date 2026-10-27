@@ -1,0 +1,4 @@
+{
+  "sections": {"main": {"type": "main-shop", "settings": {}}},
+  "order": ["main"]
+}
