@@ -1,4 +1,1 @@
-{
-  "sections": {"main": {"type": "main-shop", "settings": {}}},
-  "order": ["main"]
-}
+{"sections":{"main":{"type":"main-collections","settings":{}}},"order":["main"]}

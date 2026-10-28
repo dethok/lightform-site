@@ -1,4 +1,4 @@
-<section class="page-head"><div class="container reveal"><span class="eyebrow">Shop</span><h1>{{ collection.title }}.</h1>{% if collection.description != blank %}<p class="lede">{{ collection.description | strip_html }}</p>{% endif %}</div></section>
+<section class="page-head"><div class="container reveal"><span class="eyebrow">Shop</span><h1>{% if current_tags %}{{ current_tags | join: ', ' }}{% elsif collection.handle == 'all' %}All products{% else %}{{ collection.title }}{% endif %}.</h1>{% if collection.description != blank %}<p class="lede">{{ collection.description | strip_html }}</p>{% endif %}</div></section>
 <section class="section"><div class="container">
   {% paginate collection.products by 24 %}
     {% if collection.products.size == 0 %}

@@ -1,0 +1,34 @@
+<section class="page-head" aria-labelledby="collections-h"><div class="container reveal"><span class="eyebrow">Shop</span><h1 id="collections-h">Shop by collection.</h1></div></section>
+<section class="section" id="by-collection" aria-label="Collections"><div class="container">
+  {% comment %}ponytail: categories = Theme settings → Shop (one per line); shop.types carries draft-only junk that 404s. Tile image = first product of that type among the first 250 (paginate cap); a category with no image in that window shows "photo to come".{% endcomment %}
+  {% assign cats = settings.shop_categories | newline_to_br | split: '<br />' %}
+  <div class="grid-5">
+    {% paginate collections.all.products by 250 %}
+    {% for raw in cats %}
+      {% assign t = raw | strip %}{% if t == blank %}{% continue %}{% endif %}
+      {% assign img = nil %}
+      {% for p in collections.all.products %}{% if p.type == t and p.featured_image %}{% assign img = p.featured_image %}{% break %}{% endif %}{% endfor %}
+      {% assign dl = forloop.index0 | modulo: 5 | times: 0.06 %}
+      <a class="tile reveal" style="--d:{{ dl }}s" href="{{ t | url_for_type }}"><div class="lamp" style="--lx:50%;--ly:40%">{% if img %}{{ img | image_url: width: 800 | image_tag: loading: 'lazy', alt: t }}{% else %}<span class="ph">photo to come</span>{% endif %}</div><div class="tile-row"><h3 class="tile-name">{{ t }}</h3></div></a>
+    {% else %}
+      <p class="ph">add categories in Theme settings → Shop</p>
+    {% endfor %}
+    {% endpaginate %}
+  </div>
+  {% assign curated = 0 %}
+  {% for c in collections %}{% unless c.handle == 'frontpage' %}{% assign curated = curated | plus: 1 %}{% endunless %}{% endfor %}
+  {% if curated > 0 %}
+    <div class="sec-head reveal" style="margin-top:var(--gap-y);padding-top:28px;border-top:1px solid var(--hairline)"><span class="eyebrow">Curated collections</span></div>
+    <div class="grid-5">
+      {% for c in collections %}
+        {% if c.handle == 'frontpage' %}{% continue %}{% endif %}
+        {% assign dl = forloop.index0 | modulo: 5 | times: 0.06 %}
+        <a class="tile reveal" style="--d:{{ dl }}s" href="{{ c.url }}"><div class="lamp" style="--lx:50%;--ly:40%">{% if c.featured_image %}{{ c.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: c.title }}{% else %}<span class="ph">add an image to this collection</span>{% endif %}</div><div class="tile-row"><h3 class="tile-name">{{ c.title }}</h3></div></a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div></section>
+
+{% schema %}
+{"name": "Collections", "settings": []}
+{% endschema %}

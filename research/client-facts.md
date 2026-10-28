@@ -71,3 +71,13 @@ IG tiles already use a thin script-italic display face over pale-yellow tiles (t
 - "Sit here. Think later." (lounge corner, "The Gathering")
 - "Wall of Lamps" (table-lamp wall display) · "The Tactile Choice" (tiles/surfaces section).
 - Frames saved: research/instagram/*.png; hero placeholder crop: research/instagram/storefront-hero-placeholder.jpg (video still — replace with Megan's GIF).
+
+## Round 2 brands (Megan via Mitchell, Semi D chat 2026-10-28 22:04) — home + brands page now feature DT · Innolux · Siru · Brand van Egmond · Big Ass Fans · Maju Design
+- Brand van Egmond — Dutch lighting studio founded 1989 by William Brand (architect) and Annet van Egmond (sculptor), based in Naarden; sculptural lighting (Hollywood, Kelp). Source: dexigner.com directory, avenue-road.com designer page (2026-10-29). Store products (type "Brand van Egmond"): Bubbles, Solis, Flower Power, Hollywood Icicles — no prices yet (S$0.00 → "contact us").
+- Big Ass Fans — US fan maker, Lexington, Kentucky, founded 1999 (as HVLS Fan Co.); Haiku ceiling fans. Store copy (client's own): "hand-balanced aerofoils in durable hybrid resin and permanent-magnet motor for whisper-quiet, energy-efficient airflow". Store products (type "Haiku Fan"): Haiku L Black / White / Cocoa (1.1 m, 1.3 m, 1.5 m), Haiku H + I light kits. Cover supplied = logo PNG only (assets/logo-bigassfans.png).
+- Maju Design — sustainable table lamps with interchangeable, replaceable and upgradeable shades and bases made from biodegradable, non-toxic plant-based materials (client's own store copy); Lily is sold by the SFMOMA store, made in Oakland, CA. Cover image carries an iF Design Award 2025 badge (not independently verified — do not write "award-winning" in copy). Store collection `shop-maju-design`: Maju Wove Nelson, Wove Short, Lily Omni, Unni Short.
+- Italamp — Italian; Margot "designed by Roberta Vitadello and manufactured entirely in Italy" (client's store copy). Store products (type "Italamp"): Margot, Regolo, Muna, Rosè, Duo, Filo.
+- Possoni — no store product typed/tagged Possoni as of 2026-10-29 (132 of 332 products scanned).
+- WhatsApp: Light + Form Enquiries +65 8993 1008 (Megan, 2026-10-28).
+- Store facts: vendor is "Light + Form" on every product; brand = product type/tag. Collections: frontpage · Maju Design (`shop-maju-design`, 4) · Objects and Living (`objects-and-living`, 54).
+- Cover images (Megan's Drive folder, 2026-10-28): assets/brand-trubridge.webp 2500² · brand-innolux.jpg 600×399 (low-res, ask for bigger) · brand-siru.jpg 700×800 · brand-vanegmond.jpg (Cover 1) + brand-vanegmond-2.jpg (Cover 2) · brand-maju.webp 1620×2160 · logo-bigassfans.png.

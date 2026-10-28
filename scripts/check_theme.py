@@ -14,7 +14,8 @@ ENV = Path.home() / "automation" / "lightform" / "env"
 STORE, BASE = "26gcsf-0y.myshopify.com", "http://127.0.0.1:9292"
 VIEWPORTS = [(1440, 900), (390, 844)]
 ROUTES = ["/", "/pages/about", "/pages/services", "/pages/brands", "/pages/contact", "/collections",
-          "/collections/all", "/cart", "/search?q=light", "/this-page-does-not-exist"]
+          "/collections/all", "/collections?view=brands", "/collections/shop-maju-design",
+          "/collections/objects-and-living", "/cart", "/search?q=light", "/this-page-does-not-exist"]
 
 
 def main():
