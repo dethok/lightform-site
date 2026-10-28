@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     $$('.lamp').forEach(l => l.addEventListener('click', e => {
       if (l.classList.toggle('is-on') && l.closest('a')) e.preventDefault();
     }));
+    // flip tiles: first tap shows the description, second tap follows the link
+    $$('.tile-flip').forEach(t => t.addEventListener('click', e => {
+      if (t.classList.toggle('is-flipped')) e.preventDefault();
+    }));
   }
 
   // scroll reveal, once

@@ -34,7 +34,7 @@ h1,h2,h3,h4,p,figure,dl,dd{margin:0}
 button,input,select,textarea{font:inherit;letter-spacing:inherit;color:inherit}
 button{cursor:pointer}
 
-:root{--hero-size:calc(74px*var(--display-scale));--h1-size:calc(64px*var(--display-scale));--h2-size:calc(44px*var(--display-scale));--h3-size:calc(22px*var(--display-scale))}
+:root{--hero-size:clamp(calc(44px*var(--display-scale)),calc(5.2vw*var(--display-scale)),calc(74px*var(--display-scale)));--h1-size:calc(64px*var(--display-scale));--h2-size:calc(44px*var(--display-scale));--h3-size:calc(22px*var(--display-scale))}
 @media (max-width:600px){:root{--hero-size:calc(44px*var(--display-scale));--h1-size:calc(40px*var(--display-scale));--h2-size:calc(32px*var(--display-scale));--h3-size:calc(20px*var(--display-scale))}}
 
 h1,h2,h3,.display{font-family:var(--font-display);font-weight:var(--display-weight);font-style:var(--display-style);letter-spacing:var(--display-tracking);line-height:var(--display-lh)}
@@ -87,7 +87,8 @@ h1{font-size:var(--h1-size)} h2{font-size:var(--h2-size)} h3{font-size:var(--h3-
 .mega-trigger .chev{width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform var(--t-fast)}
 .mega-open .mega-trigger .chev{transform:translateY(1px) rotate(225deg)}
 .header-r{justify-self:end;display:flex;align-items:center;gap:24px;font-size:14px}
-.header-r .visit{border-bottom:1px solid currentColor;padding-bottom:2px}
+.header-r .visit{border-bottom:1px solid currentColor;padding-bottom:2px;white-space:nowrap}
+.header-r .cart-link{white-space:nowrap;font-variant-numeric:tabular-nums}
 .menu-btn{display:none;background:none;border:0;padding:8px;margin-right:-8px}
 .menu-btn .ico{width:26px;height:26px}
 
@@ -162,7 +163,7 @@ main{padding-top:var(--header-h)}
 .hero-bg.kb{animation:kb 18s var(--ease) forwards}
 @keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(23,22,20,.82) 0%,rgba(23,22,20,.3) 45%,rgba(23,22,20,.45) 100%)}
-.hero-in{position:relative;z-index:1;padding-bottom:80px}
+.hero-in{position:relative;z-index:1;padding-top:calc(var(--header-h) + 48px);padding-bottom:80px}
 .hero h1{font-size:var(--hero-size);max-width:13em;margin-bottom:40px}
 .hero .eyebrow{color:rgba(248,246,241,.82)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:16px}
@@ -183,6 +184,19 @@ main{padding-top:var(--header-h)}
 .tile-price{font-size:15px;color:var(--ink-2);white-space:nowrap}
 .tile-row.stack{flex-direction:column;gap:6px}
 .tile-row.stack .mono{color:var(--ink-2)}
+/* flip tiles: image in front, brand description behind (hover on fine pointers, tap on touch, focus for keyboards) */
+.tile-flip{perspective:1400px}
+.tile-card{position:relative;aspect-ratio:4/5;transform-style:preserve-3d;transition:transform .75s var(--ease)}
+.tile-face{position:absolute;inset:0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
+.tile-front .lamp{aspect-ratio:auto;height:100%}
+.tile-back{transform:rotateY(180deg);background:var(--ink);color:var(--paper);padding:28px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.tile-back .mono{color:rgba(248,246,241,.7)}
+.tile-back p{font-size:15px;line-height:1.55}
+.tile-back-name{font-size:var(--h3-size)}
+.tile-back .link-arrow{align-self:flex-start;margin-top:6px}
+.tile-flip.is-flipped .tile-card,.tile-flip:focus-visible .tile-card{transform:rotateY(180deg)}
+@media (hover:hover){.tile-flip:hover .tile-card{transform:rotateY(180deg)}}
+@media (max-width:600px){.tile-back{padding:20px}.tile-back p{font-size:14px}}
 @media (max-width:899px){.grid-tiles{grid-template-columns:repeat(2,1fr)}.grid-4{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:559px){.grid-tiles{grid-template-columns:1fr}}
 
