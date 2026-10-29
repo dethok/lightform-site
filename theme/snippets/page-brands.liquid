@@ -37,7 +37,7 @@
   </section>
   <section class="brand-sec alt" id="maju-design" aria-labelledby="maju-design-h">
     <div class="brand-split reveal">
-      <div class="brand-panel"><span class="mono brand-origin">Table lamps</span><h2 id="maju-design-h">Maju Design</h2><p>Sustainable table lamps with interchangeable shades and bases, made from plant-based, biodegradable materials.</p><p class="mono brand-carried">Carried: Maju Wove Nelson, Wove Short, Lily Omni, Unni Short</p><div><a class="btn btn-ghost" href="{{ collections['shop-maju-design'].url }}">Shop Maju Design &rarr;</a></div></div>
+      <div class="brand-panel"><span class="mono brand-origin">Singapore</span><h2 id="maju-design-h">Maju Design</h2><p>Sustainable table lamps with interchangeable shades and bases, made from plant-based, biodegradable materials.</p><p class="mono brand-carried">Carried: Maju Wove Nelson, Wove Short, Lily Omni, Unni Short</p><div><a class="btn btn-ghost" href="{{ collections['shop-maju-design'].url }}">Shop Maju Design &rarr;</a></div></div>
       <div class="lamp brand-photo" style="--lx:38%;--ly:52%"><img src="{{ 'brand-maju.webp' | asset_url }}" width="1620" height="2160" alt="Maju Design table lamp" loading="lazy"></div>
     </div>
     <div class="container brand-tiles"><div class="grid-tiles">{% for p in collections['shop-maju-design'].products limit: 12 %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: p, delay: dl %}{% endfor %}</div></div>

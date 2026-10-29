@@ -9,7 +9,6 @@
       {% endfor %}
       {% if images.size > 0 or models.size > 0 %}
         <div class="g-bar">
-          <button class="btn btn-ghost btn-sm" type="button" data-lights aria-pressed="false">Lights on</button>
           {% if models.size > 0 %}<button class="btn btn-ghost btn-sm" type="button" data-shopify-xr data-shopify-model3d-id="{{ models.first.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>View in your room</button>{% endif %}
           <div class="g-thumbs">
             {% for media in product.media %}{% case media.media_type %}{% when 'image' %}<button type="button" data-thumb aria-label="View image {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}</button>{% when 'model' %}<button type="button" data-thumb class="thumb-3d" aria-label="View 3D model" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">{{ media.preview_image | image_url: width: 112 | image_tag: loading: 'lazy', alt: '' }}<span class="mono">3D</span></button>{% endcase %}{% endfor %}

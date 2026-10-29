@@ -1,8 +1,8 @@
 <section class="page-head" aria-labelledby="brands-h"><div class="container reveal"><span class="eyebrow">Shop</span><h1 id="brands-h">Shop by brand.</h1></div></section>
-<section class="section"><div class="container"><div class="dir reveal"><div class="dir-cols">
+<section class="section"><div class="container"><div class="dir reveal"><div class="dir-cols dir-list">
   <div class="dir-brand"><a class="dir-name" href="{{ collections['shop-maju-design'].url }}">Maju Design</a></div>
   {% comment %}ponytail: an unknown tag on /collections/all/<tag> lists EVERYTHING, so gate on all_tags until the client tags products "Possoni"{% endcomment %}
-  <div class="dir-brand">{% if collections.all.all_tags contains 'Possoni' %}<a class="dir-name" href="/collections/all/possoni">Possoni</a>{% else %}<span class="dir-name ph">Possoni &middot; products to be tagged</span>{% endif %}</div>
+  <div class="dir-brand">{% if collections.all.all_tags contains 'Possoni' %}<a class="dir-name" href="/collections/all/possoni">Possoni</a>{% else %}<span class="dir-name" style="opacity:.4">Possoni</span> <span class="ph">products to be tagged</span>{% endif %}</div>
   <div class="dir-brand"><a class="dir-name" href="{{ 'Italamp' | url_for_type }}">Italamp</a></div>
 </div></div></div></section>
 

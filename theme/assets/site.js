@@ -9,14 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const upd = () => hdr.classList.toggle('is-solid', !hasHero || scrollY > 40 || megaOpen || drawerOpen);
   addEventListener('scroll', upd, { passive: true }); upd();
 
-  // mega menu: hover-intent 120ms on fine pointers, click on touch, Escape / click-outside closes
-  const mega = $('.has-mega'), trigger = $('.mega-trigger'), fine = matchMedia('(hover:hover) and (pointer:fine)');
-  let timer;
-  const setMega = o => { megaOpen = o; trigger.setAttribute('aria-expanded', o); root.classList.toggle('mega-open', o); upd(); };
-  mega.addEventListener('mouseenter', () => { if (fine.matches) { clearTimeout(timer); timer = setTimeout(() => setMega(true), 120); } });
-  mega.addEventListener('mouseleave', () => { if (fine.matches) { clearTimeout(timer); timer = setTimeout(() => setMega(false), 120); } });
-  trigger.addEventListener('click', e => { if (!fine.matches || e.detail === 0) setMega(!megaOpen); });
-  d.addEventListener('click', e => { if (megaOpen && !mega.contains(e.target)) setMega(false); });
+  // mega menus (Shop + Services): hover-intent 120ms on fine pointers, click on touch, Escape / click-outside closes; one open at a time
+  const megas = $$('.has-mega'), fine = matchMedia('(hover:hover) and (pointer:fine)');
+  const setMega = (m, o) => {
+    if (o) megas.forEach(x => x !== m && setMega(x, false));
+    m.classList.toggle('is-open', o); $('.mega-trigger', m).setAttribute('aria-expanded', o);
+    megaOpen = megas.some(x => x.classList.contains('is-open')); root.classList.toggle('mega-open', megaOpen); upd();
+  };
+  megas.forEach(m => {
+    let timer;
+    m.addEventListener('mouseenter', () => { if (fine.matches) { clearTimeout(timer); timer = setTimeout(() => setMega(m, true), 120); } });
+    m.addEventListener('mouseleave', () => { if (fine.matches) { clearTimeout(timer); timer = setTimeout(() => setMega(m, false), 120); } });
+    $('.mega-trigger', m).addEventListener('click', e => { if (!fine.matches || e.detail === 0) setMega(m, !m.classList.contains('is-open')); });
+  });
+  d.addEventListener('click', e => megas.forEach(m => { if (m.classList.contains('is-open') && !m.contains(e.target)) setMega(m, false); }));
 
   // mobile drawer: focus trap + body scroll lock
   const drawer = $('.drawer'), openBtn = $('.menu-btn'), closeBtn = $('.drawer-close');
@@ -32,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   matchMedia('(min-width:900px)').addEventListener('change', e => { if (e.matches && drawerOpen) setDrawer(false); });
   d.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-      if (megaOpen) { setMega(false); trigger.focus(); }
+      megas.forEach(m => { if (m.classList.contains('is-open')) { setMega(m, false); $('.mega-trigger', m).focus(); } });
       if (drawerOpen) setDrawer(false);
     }
     if (e.key === 'Tab' && drawerOpen) {
@@ -42,11 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // lamps: tap toggles on touch (first tap lights a linked tile, second tap follows the link)
   if (matchMedia('(pointer:coarse)').matches) {
-    $$('.lamp').forEach(l => l.addEventListener('click', e => {
-      if (l.classList.toggle('is-on') && l.closest('a')) e.preventDefault();
-    }));
     // flip tiles: first tap shows the description, second tap follows the link
     $$('.tile-flip').forEach(t => t.addEventListener('click', e => {
       if (t.classList.toggle('is-flipped')) e.preventDefault();
@@ -62,17 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // hero Ken Burns
   const kb = $('.hero-bg'); if (kb) kb.classList.add('kb');
 
-  // product gallery + explicit Lights on / off toggle
-  const slides = $$('.g-slide'), thumbs = $$('[data-thumb]'), lt = $('[data-lights]');
-  if (slides.length && lt) {
-    let on = false, cur = 0;
+  // product gallery
+  const slides = $$('.g-slide'), thumbs = $$('[data-thumb]');
+  if (slides.length) {
     const show = i => {
-      cur = i;
-      slides.forEach((s, k) => { s.classList.toggle('is-active', k === i); s.classList.toggle('is-on', on && k === i); });
+      slides.forEach((s, k) => s.classList.toggle('is-active', k === i));
       thumbs.forEach((t, k) => t.setAttribute('aria-current', k === i));
     };
     thumbs.forEach((t, k) => t.addEventListener('click', () => show(k)));
-    lt.addEventListener('click', () => { on = !on; lt.setAttribute('aria-pressed', on); lt.textContent = on ? 'Lights off' : 'Lights on'; show(cur); });
     show(0);
   }
 });

@@ -118,9 +118,9 @@ def run(proc, log):
                     before = pg.evaluate("getComputedStyle(document.querySelector('main .lamp img')).filter")
                     pg.hover("main .lamp")
                     pg.wait_for_timeout(800)
-                    hov = "ok" if pg.evaluate("getComputedStyle(document.querySelector('main .lamp img')).filter") != before else "SAME"
-                    if hov == "SAME":
-                        errs.append(f"lamp did not light ({before})")
+                    hov = "off" if pg.evaluate("getComputedStyle(document.querySelector('main .lamp img')).filter") == before else "LIT"
+                    if hov == "LIT":
+                        errs.append("lamp still lights on hover")
                 pg.mouse.move(0, 0)
                 slug = route.strip("/").replace("/", "-").replace("?", "-").replace("=", "-") or "home"
                 pg.screenshot(path=str(SHOTS / f"{slug}-{w}.png"), full_page=True)

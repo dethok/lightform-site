@@ -3,7 +3,7 @@
     <a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a>
     <nav class="nav" aria-label="Primary">
       <a href="/pages/about">About</a>
-      <a href="/pages/services">Services</a>
+      <div class="has-mega has-drop"><button class="mega-trigger" type="button" aria-expanded="false" aria-controls="mega-services">Services <span class="chev" aria-hidden="true"></span></button><div class="mega mega-drop" id="mega-services"><ul><li><a class="mega-head mono" href="/pages/services">All services</a></li><li><a href="/pages/services#lighting">Lighting</a></li><li><a href="/pages/services#curtains-blinds">Curtains &amp; Blinds</a></li><li><a href="/pages/services#electrical">Electrical Work</a></li><li><a href="/pages/services#renovation">Renovation Work</a></li><li><a href="/pages/services#consultation">Book a consultation</a></li></ul></div></div>
       <a href="/pages/brands">Brands</a>
       <div class="has-mega">
         <button class="mega-trigger" type="button" aria-expanded="false" aria-controls="mega">Shop <span class="chev" aria-hidden="true"></span></button>
@@ -31,13 +31,14 @@
   <div class="drawer-top"><a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a><button class="drawer-close" type="button" aria-label="Close menu"><span class="ico ico-close" aria-hidden="true"></span></button></div>
   <ul class="drawer-list">
     <li style="--i:0"><a href="/pages/about">About</a></li>
-    <li style="--i:1"><a href="/pages/services">Services</a></li>
-    <li style="--i:2"><a href="/pages/brands">Brands</a></li>
-    <li><span class="drawer-label" style="--i:3">Shop</span>
-      <ul class="sub"><li style="--i:4"><a href="{{ routes.collections_url }}?view=brands">Shop by brands</a></li><li style="--i:5"><a href="{{ routes.collections_url }}">Shop by collections</a></li><li style="--i:6"><a href="{{ routes.all_products_collection_url }}">Shop by products</a></li></ul></li>
-    <li style="--i:7"><a href="/pages/contact">Contact Us</a></li>
+    <li><span class="drawer-label" style="--i:1">Services</span>
+      <ul class="sub"><li style="--i:2"><a href="/pages/services#lighting">Lighting</a></li><li style="--i:3"><a href="/pages/services#curtains-blinds">Curtains &amp; Blinds</a></li><li style="--i:4"><a href="/pages/services#electrical">Electrical Work</a></li><li style="--i:5"><a href="/pages/services#renovation">Renovation Work</a></li><li style="--i:6"><a href="/pages/services#consultation">Book a consultation</a></li></ul></li>
+    <li style="--i:7"><a href="/pages/brands">Brands</a></li>
+    <li><span class="drawer-label" style="--i:8">Shop</span>
+      <ul class="sub"><li style="--i:9"><a href="{{ routes.collections_url }}?view=brands">Shop by brands</a></li><li style="--i:10"><a href="{{ routes.collections_url }}">Shop by collections</a></li><li style="--i:11"><a href="{{ routes.all_products_collection_url }}">Shop by products</a></li></ul></li>
+    <li style="--i:12"><a href="/pages/contact">Contact Us</a></li>
   </ul>
-  <div class="drawer-meta mono" style="--i:8"><a href="/pages/contact">Visit the showroom</a><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram</a></div>
+  <div class="drawer-meta mono" style="--i:13"><a href="/pages/contact">Visit the showroom</a><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram</a></div>
 </div>
 
 {% schema %}
