@@ -25,9 +25,9 @@
 ## Brands (nav on light-pro.com — exactly 6, matches the 6 tiles in Megan's sketch)
 1. David Trubridge (NZ; Coral 400/600, Ebb … products on the brands page)
 2. Innolux (Finland; Alma, Bulbo, Candeo; IG: "say hello to our most inspiring light brand yet!", RED S2 red-light therapy lamp)
-3. Possoni (Italy; Classic Ambra, Classic Rosso, Cubetto 609)
+3. Possoni (Italy; 306/5 AB, HL093/6-Rock Sv, HL180/8 PN — CORRECTED 2026-10-29, see Siru note below)
 4. Innermost (UK; Beads Penta, Brixton Spot, Bubble)
-5. Siru (Italy; 306/5 AB, HL093/6-Rock Sv, HL180/8 PN)
+5. Siru (Italy; Classic Ambra, Classic Rosso, Cubetto 609 — CORRECTED 2026-10-29: the old brands page had no brand labels and the rows were mis-assigned; Shopify descriptions say "Siru" on classic-ambra, classic-rosso, cubetto-609 (+ eclissi, sfera, cubo-ls, seppia, falco-ls615-20-bll, sydney) and "Possoni" on 306-5-ab. HL180/8 PN is not among the 332 published products; draft status unknown until Admin API access.)
 6. Swarovski Lighting (Schonbek since 1870 — handcrafted crystal chandeliers; Crystal Palace designer collaborations). "Authorized partner" badge image in research/lightpro/img.
 
 ## Shop structure on the current site

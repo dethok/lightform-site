@@ -15,11 +15,11 @@
   </section>
   <section class="brand-sec" id="siru" aria-labelledby="siru-h">
     <div class="brand-split reveal">
-      <div class="brand-panel"><span class="mono brand-origin">Italy</span><h2 id="siru-h">Siru</h2><p>Based on the Venice Lido and founded in 1989 by Rudy Marinotto. Mouth-blown Murano glass is blown inside steel wire frames, so no two pieces are identical.</p><p class="mono brand-carried">Carried: 306/5 AB, HL093/6-Rock Sv, HL180/8 PN</p><div><a class="btn btn-ghost" href="{{ routes.collections_url }}">Shop Siru &rarr;</a></div></div>
+      <div class="brand-panel"><span class="mono brand-origin">Italy</span><h2 id="siru-h">Siru</h2><p>Based on the Venice Lido and founded in 1989 by Rudy Marinotto. Mouth-blown Murano glass is blown inside steel wire frames, so no two pieces are identical.</p><p class="mono brand-carried">Carried: Classic Ambra, Classic Rosso, Cubetto 609</p><div><a class="btn btn-ghost" href="{{ routes.collections_url }}">Shop Siru &rarr;</a></div></div>
       <div class="lamp brand-photo" style="--lx:50%;--ly:30%"><img src="{{ 'brand-siru.jpg' | asset_url }}" width="700" height="800" alt="Siru Murano glass pendant lights" loading="lazy"></div>
     </div>
-    {% comment %}ponytail: real product tiles where the store has them; HL180/8 PN is not in Shopify (2026-10-29) so it stays a static tile until Megan adds it.{% endcomment %}
-    <div class="container brand-tiles"><div class="grid-tiles">{% assign hs = '306-5-ab,hl093-6-rock-sv' | split: ',' %}{% for h in hs %}{% assign p = all_products[h] %}{% if p.id %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: p, delay: dl %}{% endif %}{% endfor %}<a class="tile reveal" style="--d:0.16s" href="{{ routes.all_products_collection_url }}"><div class="tile-typo"><span class="tile-typo-name">HL180/8 PN</span><span class="ph ph-tag">photo to come</span></div><div class="tile-row"><div class="tile-id"><h3 class="tile-name">HL180/8 PN</h3><span class="mono">Siru</span></div><span class="tile-price">S$9,940.80</span></div></a></div></div>
+    {% comment %}ponytail: Siru handles per the store's own product descriptions (2026-10-29); 306/5 AB + HL093 are Possoni, HL180/8 PN is not in the store.{% endcomment %}
+    <div class="container brand-tiles"><div class="grid-tiles">{% assign hs = 'classic-ambra,classic-rosso,cubetto-609' | split: ',' %}{% for h in hs %}{% assign p = all_products[h] %}{% if p.id %}{% assign dl = forloop.index0 | modulo: 3 | times: 0.08 %}{% render 'product-tile', product: p, delay: dl %}{% endif %}{% endfor %}</div></div>
   </section>
   <section class="brand-sec alt" id="brand-van-egmond" aria-labelledby="brand-van-egmond-h">
     <div class="brand-split reveal">
