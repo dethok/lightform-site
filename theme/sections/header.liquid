@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container header-in">
-    <a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a>
+    <a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><img class="logo-img" src="{{ 'logo-lf.png' | asset_url }}" alt="Light + Form Concepts" width="1120" height="201"></a>
     <nav class="nav" aria-label="Primary">
       <a href="/pages/about">About</a>
       <div class="has-mega has-drop"><button class="mega-trigger" type="button" aria-expanded="false" aria-controls="mega-services">Services <span class="chev" aria-hidden="true"></span></button><div class="mega mega-drop" id="mega-services"><ul><li><a class="mega-head mono" href="/pages/services">All services</a></li><li><a href="/pages/services#lighting">Lighting</a></li><li><a href="/pages/services#curtains-blinds">Curtains &amp; Blinds</a></li><li><a href="/pages/services#electrical">Electrical Work</a></li><li><a href="/pages/services#renovation">Renovation Work</a></li><li><a href="/pages/services#consultation">Book a consultation</a></li></ul></div></div>
@@ -9,7 +9,6 @@
         <button class="mega-trigger" type="button" aria-expanded="false" aria-controls="mega">Shop <span class="chev" aria-hidden="true"></span></button>
         <div class="mega" id="mega">
           <div class="mega-in">
-            <div class="mega-col"><a class="mega-head mono" href="{{ routes.collections_url }}?view=brands">Shop by brands</a><ul><li><a href="{{ collections['shop-maju-design'].url }}">Maju Design</a></li><li>{% if collections.all.all_tags contains 'Possoni' %}<a href="/collections/all/possoni">Possoni</a>{% else %}<span class="ph">Possoni &middot; products to be tagged</span>{% endif %}</li><li><a href="{{ 'Italamp' | url_for_type }}">Italamp</a></li></ul></div>
             {% comment %}ponytail: categories come from Theme settings → Shop, not shop.types — shop.types includes draft-only junk types that 404, and scanning collections.all.products only sees the first 50 of 332{% endcomment %}<div class="mega-col"><a class="mega-head mono" href="{{ routes.collections_url }}">Shop by collections</a><ul>{% assign cats = settings.shop_categories | newline_to_br | split: '<br />' %}{% for raw in cats %}{% assign t = raw | strip %}{% if t == blank %}{% continue %}{% endif %}<li><a href="{{ t | url_for_type }}">{{ t }}</a></li>{% endfor %}{% if cats.size == 0 %}<li><span class="ph">add categories in Theme settings → Shop</span></li>{% endif %}</ul></div>
             <div class="mega-col"><a class="mega-head mono" href="{{ routes.all_products_collection_url }}">Shop by products</a><ul><li><a href="{{ routes.all_products_collection_url }}">All products</a></li></ul></div>
             <a class="mega-tile" href="{{ routes.all_products_collection_url }}"><div class="lamp" style="--lx:50%;--ly:30%"><img src="{{ 'innolux-bulbo.jpg' | asset_url }}" alt="Innolux Bulbo pendant lamp" width="700" height="800" loading="lazy"></div><span class="mono">Bulbo &middot; Innolux</span></a>
@@ -21,6 +20,7 @@
     <div class="header-r">
       <a class="ig-link" href="https://www.instagram.com/lightformconcepts/" aria-label="Light + Form Concepts on Instagram" rel="noopener"><span class="ico ico-ig" aria-hidden="true"></span></a>
       <a class="visit" href="/pages/contact">Visit the showroom</a>
+      <form class="hsearch" action="{{ routes.search_url }}" method="get" role="search"><input class="hsearch-in" type="search" name="q" placeholder="Search" aria-label="Search the site" autocomplete="off"><input type="hidden" name="type" value="product"><button class="hsearch-btn" type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button></form>
       <a class="cart-link" href="{{ routes.cart_url }}" aria-label="Cart, {{ cart.item_count }} items">Cart ({{ cart.item_count }})</a>
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span class="ico ico-menu" aria-hidden="true"></span></button>
     </div>
@@ -28,17 +28,18 @@
 </header>
 <div class="dim" aria-hidden="true"></div>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
-  <div class="drawer-top"><a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><span class="logo-main">LIGHT + FORM</span><span class="logo-sub">CONCEPTS</span></a><button class="drawer-close" type="button" aria-label="Close menu"><span class="ico ico-close" aria-hidden="true"></span></button></div>
+  <div class="drawer-top"><a class="logo" href="{{ routes.root_url }}" aria-label="Light + Form Concepts, home"><img class="logo-img" src="{{ 'logo-lf.png' | asset_url }}" alt="Light + Form Concepts" width="1120" height="201"></a><button class="drawer-close" type="button" aria-label="Close menu"><span class="ico ico-close" aria-hidden="true"></span></button></div>
+  <form class="dsearch" action="{{ routes.search_url }}" method="get" role="search"><input type="search" name="q" placeholder="Search products" aria-label="Search the site"><input type="hidden" name="type" value="product"><button type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button></form>
   <ul class="drawer-list">
     <li style="--i:0"><a href="/pages/about">About</a></li>
     <li><span class="drawer-label" style="--i:1">Services</span>
       <ul class="sub"><li style="--i:2"><a href="/pages/services#lighting">Lighting</a></li><li style="--i:3"><a href="/pages/services#curtains-blinds">Curtains &amp; Blinds</a></li><li style="--i:4"><a href="/pages/services#electrical">Electrical Work</a></li><li style="--i:5"><a href="/pages/services#renovation">Renovation Work</a></li><li style="--i:6"><a href="/pages/services#consultation">Book a consultation</a></li></ul></li>
     <li style="--i:7"><a href="/pages/brands">Brands</a></li>
     <li><span class="drawer-label" style="--i:8">Shop</span>
-      <ul class="sub"><li style="--i:9"><a href="{{ routes.collections_url }}?view=brands">Shop by brands</a></li><li style="--i:10"><a href="{{ routes.collections_url }}">Shop by collections</a></li><li style="--i:11"><a href="{{ routes.all_products_collection_url }}">Shop by products</a></li></ul></li>
-    <li style="--i:12"><a href="/pages/contact">Contact Us</a></li>
+      <ul class="sub"><li style="--i:9"><a href="{{ routes.collections_url }}">Shop by collections</a></li><li style="--i:10"><a href="{{ routes.all_products_collection_url }}">Shop by products</a></li></ul></li>
+    <li style="--i:11"><a href="/pages/contact">Contact Us</a></li>
   </ul>
-  <div class="drawer-meta mono" style="--i:13"><a href="/pages/contact">Visit the showroom</a><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram</a></div>
+  <div class="drawer-meta mono" style="--i:12"><a href="/pages/contact">Visit the showroom</a><a href="https://www.instagram.com/lightformconcepts/" rel="noopener">Instagram</a></div>
 </div>
 
 {% schema %}

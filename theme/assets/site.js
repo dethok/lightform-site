@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const upd = () => hdr.classList.toggle('is-solid', !hasHero || scrollY > 40 || megaOpen || drawerOpen);
   addEventListener('scroll', upd, { passive: true }); upd();
 
+  // header search: an empty submit just opens/focuses the field
+  const hs = $('.hsearch'); if (hs) { hs.addEventListener('submit', e => { const i = $('.hsearch-in', hs); if (!i.value.trim()) { e.preventDefault(); i.focus(); } }); }
+
   // mega menus (Shop + Services): hover-intent 120ms on fine pointers, click on touch, Escape / click-outside closes; one open at a time
   const megas = $$('.has-mega'), fine = matchMedia('(hover:hover) and (pointer:fine)');
   const setMega = (m, o) => {

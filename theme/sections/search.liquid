@@ -1,8 +1,8 @@
-<section class="page-head"><div class="container reveal"><h1>Search.</h1>
-  {% form 'search' %}
+<section class="page-head"><div class="container reveal"><h1>{% if search.performed %}Results for &ldquo;{{ search.terms | escape }}&rdquo;.{% else %}Search.{% endif %}</h1>
+  <form action="{{ routes.search_url }}" method="get" role="search">
     <label class="f-row"><span class="mono">Search the site</span><input type="search" name="q" value="{{ search.terms | escape }}"></label>
     <button class="btn btn-primary" type="submit">Search</button>
-  {% endform %}
+  </form>
 </div></section>
 <section class="section"><div class="container">
 {% if search.performed %}
