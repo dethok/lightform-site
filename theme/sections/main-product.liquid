@@ -24,7 +24,13 @@
     <div class="pdp-buy">
       <span class="eyebrow">{{ product.type | default: product.vendor }}</span>
       <h1>{{ product.title }}</h1>
-      {% if product.description != blank %}<div class="body rte">{{ product.description }}</div>{% endif %}
+      {% comment %}ponytail: Megan's descriptions are "<strong>Label:</strong> value" runs (320/332 products). Split on <strong>; "Description" becomes the prose, every other label a spec row. No <strong> at all → raw description, no table.{% endcomment %}
+      {%- assign parts = product.description | replace: '&nbsp;', ' ' | replace: ' ', ' ' | split: '<strong' -%}
+      {%- assign lead = parts[0] | strip_html | strip -%}
+      {%- assign desc_text = '' -%}
+      {%- capture spec_rows -%}{%- for part in parts offset: 1 -%}{%- assign kv = part | split: '</strong>' -%}{%- assign label = kv[0] | remove_first: '>' | strip_html | strip_newlines | strip | remove: ':' | strip | replace: 'Color', 'Colour' -%}{%- assign value = kv[1] | strip_html | strip_newlines | strip -%}{%- assign first = value | slice: 0 -%}{%- if first == ':' -%}{%- assign value = value | remove_first: ':' | strip -%}{%- endif -%}{%- if label == 'Description' -%}{%- assign desc_text = value -%}{%- elsif label != blank and value != blank -%}<tr><th scope="row">{{ label }}</th><td>{{ value }}</td></tr>{%- endif -%}{%- endfor -%}{%- endcapture -%}
+      {%- assign spec_rows = spec_rows | strip -%}
+      {% if spec_rows != blank or desc_text != blank %}{% if lead != blank or desc_text != blank %}<div class="body rte">{% if lead != blank %}<p>{{ lead }}</p>{% endif %}{% if desc_text != blank %}<p>{{ desc_text }}</p>{% endif %}</div>{% endif %}{% elsif product.description != blank %}<div class="body rte">{{ product.description }}</div>{% endif %}
       <p class="price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</p>
       {% comment %}ponytail: single variant <select>, no option-matrix JS; add when a product has 2+ options that need separate pickers{% endcomment %}
       {% form 'product', product %}
@@ -39,13 +45,9 @@
         </div>
       {% endform %}
       {% if section.settings.note_text != blank %}<div class="note"><span class="mono">{{ section.settings.note_label }}</span>{{ section.settings.note_text }}</div>{% endif %}
-      {% comment %}ponytail: specs = metafield custom.specs (rich text) when the client adds one{% endcomment %}
-      <details class="specs">
-        <summary>Product Details</summary>
-        {% if product.metafields.custom.specs != blank %}{{ product.metafields.custom.specs | metafield_tag }}{% else %}
-        <table class="spec"><tbody><tr><th scope="row">Wattage</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Colour temperature</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">CRI</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Lumens</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Dimming</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Material</th><td><span class="ph">to be confirmed</span></td></tr><tr><th scope="row">Dimensions</th><td><span class="ph">to be confirmed</span></td></tr></tbody></table>
-        {% endif %}
-      </details>
+      {% comment %}ponytail: metafield custom.specs wins if the client ever adds one; otherwise the rows parsed from the description above. Nothing parsed → no Product Details block.{% endcomment %}
+      {% if product.metafields.custom.specs != blank %}<details class="specs" open><summary>Product Details</summary>{{ product.metafields.custom.specs | metafield_tag }}</details>
+      {% elsif spec_rows != blank %}<details class="specs" open><summary>Product Details</summary><table class="spec"><tbody>{{ spec_rows }}</tbody></table></details>{% endif %}
     </div>
   </div>
 </div>
