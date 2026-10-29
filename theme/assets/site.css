@@ -97,7 +97,7 @@ h1{font-size:var(--h1-size)} h2{font-size:var(--h2-size)} h3{font-size:var(--h3-
 /* mega menu */
 .mega{position:absolute;left:0;right:0;top:100%;background:var(--white);color:var(--ink);border-bottom:1px solid var(--hairline);visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity var(--t-fast) var(--ease),transform var(--t-fast) var(--ease),visibility 0s var(--t-fast)}
 .has-mega.is-open .mega{visibility:visible;opacity:1;transform:none;transition-delay:0s}
-.mega-in{max-width:var(--container);margin-inline:auto;padding:48px var(--gutter) 56px;display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:48px}
+.mega-in{max-width:var(--container);margin-inline:auto;padding:48px var(--gutter) 56px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
 .mega-head{display:block;color:var(--ink-2);margin-bottom:18px;transition:color var(--t-fast)}
 .mega-head:hover{color:var(--ink)}
 .mega-col li a{display:block;padding:5px 0;font-size:15px;transition:transform var(--t-fast) var(--ease)}
@@ -107,9 +107,6 @@ h1{font-size:var(--h1-size)} h2{font-size:var(--h2-size)} h3{font-size:var(--h3-
 .mega-drop ul{padding:24px 28px 28px}
 .mega-drop li a{display:block;padding:6px 0;font-size:15px;color:var(--ink-2)}
 .mega-drop li a:hover{color:var(--ink)}
-.mega-tile{display:block}
-.mega-tile .lamp{aspect-ratio:4/5;max-height:300px;width:100%}
-.mega-tile .mono{display:block;margin-top:12px;color:var(--ink-2)}
 .dim{position:fixed;inset:0;z-index:40;background:var(--dim);opacity:0;visibility:hidden;transition:opacity var(--t-fast),visibility 0s var(--t-fast)}
 .mega-open .dim{opacity:1;visibility:visible;transition-delay:0s}
 

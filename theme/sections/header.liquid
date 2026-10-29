@@ -11,7 +11,6 @@
           <div class="mega-in">
             {% comment %}ponytail: categories come from Theme settings → Shop, not shop.types — shop.types includes draft-only junk types that 404, and scanning collections.all.products only sees the first 50 of 332{% endcomment %}<div class="mega-col"><a class="mega-head mono" href="{{ routes.collections_url }}">Shop by collections</a><ul>{% assign cats = settings.shop_categories | newline_to_br | split: '<br />' %}{% for raw in cats %}{% assign t = raw | strip %}{% if t == blank %}{% continue %}{% endif %}<li><a href="{{ t | url_for_type }}">{{ t }}</a></li>{% endfor %}{% if cats.size == 0 %}<li><span class="ph">add categories in Theme settings → Shop</span></li>{% endif %}</ul></div>
             <div class="mega-col"><a class="mega-head mono" href="{{ routes.all_products_collection_url }}">Shop by products</a><ul><li><a href="{{ routes.all_products_collection_url }}">All products</a></li></ul></div>
-            <a class="mega-tile" href="{{ routes.all_products_collection_url }}"><div class="lamp" style="--lx:50%;--ly:30%"><img src="{{ 'innolux-bulbo.jpg' | asset_url }}" alt="Innolux Bulbo pendant lamp" width="700" height="800" loading="lazy"></div><span class="mono">Bulbo &middot; Innolux</span></a>
           </div>
         </div>
       </div>
