@@ -3,8 +3,7 @@
     {%- assign img = section.settings.image -%}
     <img class="hero-bg" src="{{ img | image_url: width: 1600 }}" srcset="{{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1200 }} 1200w, {{ img | image_url: width: 1600 }} 1600w, {{ img | image_url: width: 2000 }} 2000w" sizes="100vw" alt="The Light + Form Concepts storefront on Balestier Road" width="{{ img.width }}" height="{{ img.height }}" fetchpriority="high">
   {%- else -%}
-    <img class="hero-bg" src="{{ 'hero-storefront.jpg' | asset_url }}" alt="The Light + Form Concepts storefront on Balestier Road" width="1600" height="774" fetchpriority="high">
-    <div class="hero-ph"><div class="container"><span class="ph">placeholder &mdash; Megan's storefront GIF goes here</span></div></div>
+    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="{{ 'hero-storefront-poster.jpg' | asset_url }}" aria-label="The Light + Form Concepts storefront on Balestier Road" width="1440" height="1080"><source src="{{ 'hero-storefront.mp4' | asset_url }}" type="video/mp4"></video>
   {%- endif -%}
   <div class="container hero-in">
     <span class="eyebrow">{{ section.settings.eyebrow }}</span>

@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // hero Ken Burns
   const kb = $('.hero-bg'); if (kb) kb.classList.add('kb');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('video[autoplay]').forEach(v => { v.pause(); v.removeAttribute('autoplay'); });
 
   // product gallery
   const slides = $$('.g-slide'), thumbs = $$('[data-thumb]');
