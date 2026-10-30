@@ -76,6 +76,9 @@ def run(proc, log):
         print("note: store has no products; product page + /products/* links skipped")
     SHOTS.mkdir(parents=True, exist_ok=True)
     fails, rows, seen = [], [], set()
+    css, js = (ROOT / "theme/assets/site.css").read_text(), (ROOT / "theme/assets/site.js").read_text()
+    if not re.search(r"\.hero::after\{[^}]*pointer-events:none", css) or "touchend" not in js:
+        fails.append("hero tap-through: .hero::after needs pointer-events:none and site.js needs the touchend autoplay kick")
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
         for route in routes:

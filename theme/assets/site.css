@@ -161,7 +161,8 @@ main{padding-top:var(--header-h)}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform-origin:60% 55%}
 .hero-bg.kb{animation:kb 18s var(--ease) forwards}
 @keyframes kb{from{transform:scale(1)}to{transform:scale(1.06)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(23,22,20,.82) 0%,rgba(23,22,20,.3) 45%,rgba(23,22,20,.45) 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(23,22,20,.82) 0%,rgba(23,22,20,.3) 45%,rgba(23,22,20,.45) 100%)}
+.hero-bg::-webkit-media-controls-start-playback-button,.visit-photo video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none}
 .hero-in{position:relative;z-index:1;padding-top:calc(var(--header-h) + 48px);padding-bottom:80px}
 .hero h1{font-size:var(--hero-size);max-width:13em;margin-bottom:40px}
 .hero .eyebrow{color:rgba(248,246,241,.82)}

@@ -67,6 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // hero Ken Burns
   const kb = $('.hero-bg'); if (kb) kb.classList.add('kb');
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('video[autoplay]').forEach(v => { v.pause(); v.removeAttribute('autoplay'); });
+  // iOS Low Power Mode blocks autoplay: retry, then start on the first touch/click
+  const vids = $$('video[autoplay]');
+  const kick = () => vids.forEach(v => { if (v.paused) { v.muted = true; v.play().catch(() => {}); } });
+  kick();
+  document.addEventListener('touchend', kick, { once: true, passive: true });
+  document.addEventListener('click', kick, { once: true });
 
   // product gallery
   const slides = $$('.g-slide'), thumbs = $$('[data-thumb]');
